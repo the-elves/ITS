@@ -1,0 +1,2 @@
+[General]
+network = org.car2x.veins.modules.application.traci.net1

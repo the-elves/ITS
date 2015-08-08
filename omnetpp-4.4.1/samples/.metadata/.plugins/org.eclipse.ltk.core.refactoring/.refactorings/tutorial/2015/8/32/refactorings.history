@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;tutorial/src/firstned.ned\.ned&apos; to &apos;firstned.ned&apos;" description="Rename resource &apos;firstned.ned\.ned&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/firstned.ned\.ned" name="firstned.ned" stamp="1438685549350" updateReferences="true"/>
+</session>

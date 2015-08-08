@@ -1,0 +1,8 @@
+20:50:31 **** Incremental Build of configuration gcc-debug for project tutorial ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+cd src && make
+make[1]: Entering directory `/home/administrator/ITS/omnetpp-4.4.1/samples/tutorial/src'
+make[1]: Leaving directory `/home/administrator/ITS/omnetpp-4.4.1/samples/tutorial/src'
+
+20:50:31 Build Finished (took 57ms)
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.omnetpp.neddoc.GeneratorConfigurationDialog">
+		<item value="true" key="DoxySourceBrowser"/>
+		<item value="true" key="GeneratePerTypeInheritanceDiagrams"/>
+		<item value="" key="OutputDirectoryPath"/>
+		<item value="true" key="GenerateNedSourceListings"/>
+		<item value="true" key="GenerateFullInheritanceDiagrams"/>
+		<item value="true" key="GenerateNedTypeFigures"/>
+		<item value="true" key="GenerateFullUsageDiagrams"/>
+		<item value="true" key="GenerateDoxy"/>
+		<item value="false" key="GenerateExplicitLinks"/>
+		<item value="true" key="GeneratePerTypeUsageDiagrams"/>
+	</section>
+</section>

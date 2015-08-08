@@ -1,0 +1,18 @@
+#include<omnetpp.h>
+#include<string.h>
+class Trc1: public cSimpleModule{
+protected:
+    virtual void handleMessage(cMessage *c);
+    virtual void initialize();
+};
+DefineModule(Trc1);
+
+void Trc1::initialize(){
+    if(strcmp(getname(),"tic")==0){
+        send(new cMessage("tictocmsg"),"out");
+    }
+}
+void Trc1::handleMessage(cMessage *c){
+    send(c,"out");
+}
+

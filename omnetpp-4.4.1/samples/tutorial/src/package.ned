@@ -1,0 +1,3 @@
+package tutorial;
+
+@license(LGPL);

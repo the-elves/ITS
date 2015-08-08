@@ -1,0 +1,15 @@
+17:32:55 **** Incremental Build of configuration gcc-debug for project inetmanet-2.0 ****
+make MODE=debug CONFIGNAME=gcc-debug -j4 all 
+cd src && make
+make[1]: Entering directory `/home/administrator/ITS/inetmanet-2.0/src'
+make[1]: Leaving directory `/home/administrator/ITS/inetmanet-2.0/src'
+18:14:30 **** Incremental Build of configuration gcc-debug for project inetmanet-2.0 ****
+make MODE=debug CONFIGNAME=gcc-debug -j4 all 
+cd src && make
+make[1]: Entering directory `/home/administrator/ITS/inetmanet-2.0/src'
+make[1]: Leaving directory `/home/administrator/ITS/inetmanet-2.0/src'
+18:14:43 **** Incremental Build of configuration gcc-debug for project inetmanet-2.0 ****
+make MODE=debug CONFIGNAME=gcc-debug -j4 all 
+cd src && make
+make[1]: Entering directory `/home/administrator/ITS/inetmanet-2.0/src'
+make[1]: Leaving directory `/home/administrator/ITS/inetmanet-2.0/src'

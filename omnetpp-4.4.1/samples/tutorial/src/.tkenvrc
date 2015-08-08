@@ -1,0 +1,3 @@
+# Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "net1" "net1" "2" "607x337+444+143:normal"
+
