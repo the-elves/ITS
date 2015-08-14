@@ -17,11 +17,11 @@
 
 
 #include "ChannelAccess.h"
-#include "IMobility.h"
+#include "IVANETMobility.h"
 
 #define coreEV (ev.isDisabled()||!coreDebug) ? EV : EV << logName() << "::ChannelAccess: "
 
-simsignal_t ChannelAccess::mobilityStateChangedSignal = registerSignal("mobilityStateChanged");
+simsignal_t ChannelAccess::mobilityStateChangedSignal = registerSignal("vanetMobilityStateChanged");
 
 static int parseInt(const char *s, int defaultValue)
 {
@@ -114,12 +114,11 @@ void ChannelAccess::sendToChannel(AirFrame *msg)
 
 void ChannelAccess::receiveSignal(cComponent *source, simsignal_t signalID, cObject *obj)
 {
-    if (signalID == mobilityStateChangedSignal)
+    if (signalID == registerSignal("vanetMobilityStateChanged"))
     {
-        IMobility *mobility = check_and_cast<IMobility*>(obj);
+        IVANETMobility *mobility = check_and_cast<IVANETMobility*>(obj);
         radioPos = mobility->getCurrentPosition();
         positionUpdateArrived = true;
-
         if (myRadioRef)
             cc->setRadioPosition(myRadioRef, radioPos);
     }

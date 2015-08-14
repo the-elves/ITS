@@ -1,0 +1,5 @@
+12:56:06 **** Incremental Build of configuration gcc-debug for project VANETSim ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+
+12:56:06 Build Finished (took 56ms)
+

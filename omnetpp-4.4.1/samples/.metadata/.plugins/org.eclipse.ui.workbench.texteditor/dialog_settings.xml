@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="289" key="DIALOG_WIDTH"/>
-		<item value="392" key="DIALOG_Y_ORIGIN"/>
+		<item value="210" key="DIALOG_Y_ORIGIN"/>
 		<item value="432" key="DIALOG_HEIGHT"/>
-		<item value="1181" key="DIALOG_X_ORIGIN"/>
+		<item value="1509" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="configu" key="selection"/>
+		<item value="IMob" key="selection"/>
 		<list key="findhistory">
-			<item value="configu"/>
-			<item value="\"/>
-			<item value="\\"/>
-			<item value="launch"/>
-			<item value="F:/GitHub"/>
-			<item value="F:/GirHub"/>
-			<item value="aodv"/>
-			<item value="//"/>
+			<item value="Imob"/>
+			<item value="updateCon"/>
+			<item value="regi"/>
+			<item value="regis"/>
+			<item value="sub"/>
+			<item value="emit"/>
+			<item value="signal"/>
+			<item value="subsc"/>
 		</list>
 		<list key="replacehistory">
 			<item value="/"/>

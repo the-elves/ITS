@@ -6,10 +6,18 @@
 		<item value="227191" key="searchFlags"/>
 		<item value="false" key="caseSensitive"/>
 		<list key="previousPatterns">
+			<item value="registerSignalmobilityStateChanged"/>
+			<item value="move"/>
+			<item value="struct*radioref"/>
+			<item value="IPv4Address::ALL_HOSTS_MCAST"/>
 			<item value="emit"/>
 			<item value="mobilityStateChangedSigna"/>
 			<item value="sendSignal"/>
 		</list>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="1280" key="size.width"/>
+		<item value="159" key="size.height"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>

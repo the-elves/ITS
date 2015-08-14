@@ -51,6 +51,17 @@
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv4"/>
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv4/headers"/>
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/headers"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/nodes"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/ieee8021Q"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/ieee8021AH"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/ieee8021AD"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/ethernet"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/common"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/Tester"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/RSTP"/>
+<includePath path="/home/administrator/ITS/inetmanet-2.0/src/underTest/ieee8021d/MVRP"/>
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/transport"/>
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/transport/udp"/>
 <includePath path="/home/administrator/ITS/inetmanet-2.0/src/transport/tcp_common"/>

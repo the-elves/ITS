@@ -5,25 +5,34 @@
 <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/VANETSim/simulations/aodvvanet/omnetpp.ini"/>
 <listEntry value="/VANETSim/omnetpp.ini"/>
+<listEntry value="/VANETSim/out/gcc-debug/omnetpp.ini"/>
 <listEntry value="/VANETSim/simulations/omnetpp.ini"/>
+<listEntry value="/VANETSim/src/omnetpp.ini"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 <listEntry value="1"/>
+<listEntry value="1"/>
+<listEntry value="1"/>
+<listEntry value="1"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
 </listAttribute>
 <stringAttribute key="org.omnetpp.launch.ADDITIONAL_ARG" value=""/>
 <stringAttribute key="org.omnetpp.launch.CONFIG_NAME" value=""/>
 <stringAttribute key="org.omnetpp.launch.DEBUG_ON_ERRORS" value=""/>
-<stringAttribute key="org.omnetpp.launch.EXECUTABLE" value="/VANETSim/src/VANETSim"/>
-<stringAttribute key="org.omnetpp.launch.IMAGE_PATH" value="${opp_image_path:/VANETSim/simulations}"/>
+<stringAttribute key="org.omnetpp.launch.EXECUTABLE" value="/VANETSim/out/gcc-debug/VANETSim"/>
+<stringAttribute key="org.omnetpp.launch.IMAGE_PATH" value="${opp_image_path:/VANETSim/src}"/>
 <stringAttribute key="org.omnetpp.launch.INI_FILES" value="omnetpp.ini"/>
-<stringAttribute key="org.omnetpp.launch.NED_PATH" value="${opp_ned_path:/VANETSim/simulations}"/>
+<stringAttribute key="org.omnetpp.launch.NED_PATH" value="${opp_ned_path:/VANETSim/src}"/>
 <intAttribute key="org.omnetpp.launch.NUM_CONCURRENT_PROCESSES" value="1"/>
 <stringAttribute key="org.omnetpp.launch.RECORD_EVENTLOG" value=""/>
 <stringAttribute key="org.omnetpp.launch.RUN" value=""/>
-<stringAttribute key="org.omnetpp.launch.SHARED_LIBS" value="${opp_shared_libs:/VANETSim/simulations}"/>
+<stringAttribute key="org.omnetpp.launch.SHARED_LIBS" value="${opp_shared_libs:/VANETSim/src}"/>
 <booleanAttribute key="org.omnetpp.launch.SHOW_DEBUG_VIEW" value="false"/>
 <stringAttribute key="org.omnetpp.launch.USER_INTERFACE" value=""/>
-<stringAttribute key="org.omnetpp.launch.WORKING_DIRECTORY" value="/VANETSim/simulations"/>
+<stringAttribute key="org.omnetpp.launch.WORKING_DIRECTORY" value="/VANETSim/src"/>
 </launchConfiguration>

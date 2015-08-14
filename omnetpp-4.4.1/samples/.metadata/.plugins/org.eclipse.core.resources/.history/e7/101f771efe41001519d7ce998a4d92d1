@@ -1,0 +1,9 @@
+
+package vanetsim.simulations.aodvvanet;
+
+import vanetsim.simulations._nodes.AODVVANETRSU;
+
+network AODVVANET extends vanetsim.simulations._nodes.AODVVANETScenario
+{
+    submodules:
+}

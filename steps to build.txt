@@ -36,9 +36,10 @@ D] VANETProject
 6. make
 7. run VANETSim folder from ecliplse
   -- error log
-	1. if define_module problem, try building with opp in run 		   configurations
-	2. launch config is to be given in xmldoc("****") taken from 	  	   omnetpp.ini of simulations
+	1. if define_module problem, try building with opp in run configurations
+	2. launch config is to be given in xmldoc("****") taken from omnetpp.ini of simulations
 	3. add base dir tag eg:<basedir path="/home/administrator/ITS/VANETProject/VANETSim/simulations/_maps/simple/"/> (should point to directory containing map files)
 	4. remove the path if exists from sumo.cfg files 
 	5. set default for module_type parameter in TraciScenarioManager.ned to the value found in omnetpp.ini of aodvvanet 
-	6. set the default for networkconfiguratormodule to "" in inetmanet/src/networklayer/autorouting/ipv4/ipv4NodeConfigurator 
+	6. set the default for networkconfiguratormodule to "" in inetmanet/src/networklayer/autorouting/ipv4/ipv4NodeConfigurator
+	7. rsu mobility parameter should be taken from omnetpp.ini of aodvvanet 

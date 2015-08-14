@@ -6,10 +6,10 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value="/home/administrator/ITS/inetmanet-2.0"/>
+			<item value="/home/administrator/ITS/inet"/>
 			<item value="/home/administrator/ITS/VANETProject/VANETSim"/>
 			<item value="/home/administrator/ITS/VANETProject"/>
 			<item value="/home/administrator/ITS/VANETProject-master"/>
-			<item value="/home/administrator/ITS/VANETProject-master/VANETSim"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

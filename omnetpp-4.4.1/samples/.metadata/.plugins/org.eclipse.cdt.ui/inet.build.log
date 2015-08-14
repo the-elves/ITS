@@ -1,8 +1,9 @@
-23:25:36 **** Incremental Build of configuration gcc-debug for project inet ****
+18:29:38 **** Incremental Build of configuration gcc-debug for project inet ****
 make MODE=debug CONFIGNAME=gcc-debug -j4 all 
 cd src && make
 make[1]: Entering directory `/home/administrator/ITS/inet/src'
+Creating shared library: ../out/gcc-debug/src/libinet.so
 make[1]: Leaving directory `/home/administrator/ITS/inet/src'
 
-23:25:37 Build Finished (took 116ms)
+18:29:41 Build Finished (took 2s.911ms)
 

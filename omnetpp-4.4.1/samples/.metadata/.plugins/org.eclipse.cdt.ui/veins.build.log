@@ -1,7 +1,7 @@
-01:00:12 **** Incremental Build of configuration gcc-debug for project veins ****
+22:15:25 **** Incremental Build of configuration gcc-debug for project veins ****
 make MODE=debug CONFIGNAME=gcc-debug all 
 make[1]: Entering directory `/home/administrator/ITS/veins-veins-3.0/src'
 make[1]: Leaving directory `/home/administrator/ITS/veins-veins-3.0/src'
 
-01:00:12 Build Finished (took 58ms)
+22:15:25 Build Finished (took 58ms)
 

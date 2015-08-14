@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="TemplateBasedWizard">
+		<item value="bundleentry://264.fwk655413753/template/emptyproject/" key="project.template"/>
 		<item value="bundleentry://272.fwk655413753/templates/inifile/" key="inifile.template"/>
 	</section>
 </section>
