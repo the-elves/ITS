@@ -1,0 +1,5 @@
+package vanetsim.simulations._nodes;
+import inet.nodes.inet.aodv;
+module AODVMANETCar extends AODVRouter{
+
+}

@@ -719,9 +719,8 @@ void AODVRouting::sendAODVPacket(AODVControlPacket *packet, const IPv4Address& d
     networkProtocolControlInfo->setProtocol(IP_PROT_MANET);
     networkProtocolControlInfo->setDestAddr(destAddr);
     networkProtocolControlInfo->setSrcAddr(getSelfIPAddress());
-
     // TODO: Implement: support for multiple interfaces
-    InterfaceEntry *ifEntry = interfaceTable->getInterfaceByName("wlan0");
+    InterfaceEntry *ifEntry = interfaceTable->getInterfaceByName("wlan");
     networkProtocolControlInfo->setInterfaceId(ifEntry->getInterfaceId());
 
     UDPPacket *udpPacket = new UDPPacket(packet->getName());
@@ -964,7 +963,7 @@ IPv4Route *AODVRouting::createRoute(const IPv4Address& destAddr, const IPv4Addre
     newProtocolData->setLifeTime(lifeTime);
     newProtocolData->setDestSeqNum(destSeqNum);
 
-    InterfaceEntry *ifEntry = interfaceTable->getInterfaceByName("wlan0");    // TODO: IMPLEMENT: multiple interfaces
+    InterfaceEntry *ifEntry = interfaceTable->getInterfaceByName("wlan");    // TODO: IMPLEMENT: multiple interfaces
     if (ifEntry)
         newRoute->setInterface(ifEntry);
 

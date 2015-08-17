@@ -7,6 +7,8 @@ import inet.networklayer.autorouting.ipv4.HostAutoConfigurator;
 import inet.networklayer.autorouting.ipv4.IPv4NetworkConfigurator;
 import inet.networklayer.common.InterfaceTable;
 import inet.networklayer.ipv4.RoutingTable;
+import inet.networklayer.routing.aodv.AODVRouting;
+import inet.nodes.aodv.AODVRouter;
 import inet.nodes.inet.NetworkLayer;
 import inet.transport.udp.UDP;
 import inet.world.radio.ChannelControl;
@@ -23,6 +25,7 @@ module AODVVANETCar
         networkLayer.configurator.networkConfiguratorModule = "";
         string routingProtocol @enum("AODVVANET","RBVTR","BITCAR") = default("AODVVANET");
         //int numHosts;
+        @display("bgb=538,521");
     gates:
         input radioIn @directIn;
     submodules:
@@ -48,7 +51,7 @@ module AODVVANETCar
         routingTable: RoutingTable {
             parameters:
                 IPForward = true;
-                routerId = "";
+                routerId = "auto";
                 routingFile = "";
                 @display("p=60,326");
         }
@@ -81,6 +84,9 @@ module AODVVANETCar
             parameters:
                 @display("p=50,200");
         }
+        aodvRouting: AODVRouting {
+            @display("p=473,327");
+        }
     connections allowunconnected:
         udp.appOut++ --> app.udp$i;
         udp.appIn++ <-- app.udp$o;
@@ -93,6 +99,6 @@ module AODVVANETCar
 
         radioIn --> wlan.radioIn;
 
-        //networkLayer.transportOut++ --> manetrouting.from_ip;
-        //networkLayer.transportIn++ <-- manetrouting.to_ip;
+        networkLayer.transportOut++ --> aodvRouting.ipIn;
+        aodvRouting.ipOut --> networkLayer.transportIn++;
 }

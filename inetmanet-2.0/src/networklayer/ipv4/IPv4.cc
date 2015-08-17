@@ -420,7 +420,7 @@ void IPv4::datagramLocalOut(IPv4Datagram* datagram, const InterfaceEntry* destIE
             }
             if (!destIE)
                 destIE = ift->getFirstLoopbackInterface();
-            ASSERT(destIE);
+            //ASSERT(destIE);
             routeUnicastPacket(datagram, NULL, destIE, destAddr);
         }
         else if (destAddr.isLimitedBroadcastAddress() || rt->isLocalBroadcastAddress(destAddr))

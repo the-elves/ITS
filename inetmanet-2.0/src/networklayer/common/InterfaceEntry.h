@@ -168,7 +168,7 @@ class INET_API InterfaceEntry : public cNamedObject
 
     /** @name Field getters. Note they are non-virtual and inline, for performance reasons. */
     //@{
-    int getInterfaceId() const        {return interfaceId;}
+    int getInterfaceId() const        {EV<<"##@##IE"<<interfaceId;return interfaceId;}
     cModule *getInterfaceModule() const  {return interfaceModule;}
     int getNetworkLayerGateIndex() const {return nwLayerGateIndex;}
     int getNodeOutputGateId() const   {return nodeOutputGateId;}

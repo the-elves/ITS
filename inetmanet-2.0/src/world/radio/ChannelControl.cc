@@ -195,7 +195,7 @@ void ChannelControl::updateConnections(RadioRef h)
 
         // get the distance between the two radios.
         // (omitting the square root (calling sqrdist() instead of distance()) saves about 5% CPU)
-        bool inRange = (hpos.sqrdist(hi->pos))/1000000 < 1;
+        bool inRange = hpos.sqrdist(hi->pos) < maxInterferenceDistance;
 
         if (inRange)
         {

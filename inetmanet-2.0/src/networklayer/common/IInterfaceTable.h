@@ -19,7 +19,7 @@
 #define __INET_IINTERFACETABLE_H
 
 #include "INETDefs.h"
-
+#include<string>
 #include "IPvXAddress.h"
 #include "InterfaceEntry.h"  // not strictly required, but clients will need it anyway
 
@@ -41,6 +41,8 @@ class INET_API IInterfaceTable
     virtual void interfaceChanged(int category, const InterfaceEntryChangeDetails *details) = 0;
 
   public:
+    virtual void printAllInterfaceNames(){}
+
     virtual ~IInterfaceTable() {}
 
     /**

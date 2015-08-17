@@ -24,4 +24,5 @@
 <booleanAttribute key="org.omnetpp.launch.SHOW_DEBUG_VIEW" value="false"/>
 <stringAttribute key="org.omnetpp.launch.USER_INTERFACE" value=""/>
 <stringAttribute key="org.omnetpp.launch.WORKING_DIRECTORY" value="/onlyVanet/simulations/aodvvanet"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
 </launchConfiguration>

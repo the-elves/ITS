@@ -87,7 +87,7 @@ void aodvTraCI::sendMessage() {
 
     cPacket* newMessage = new cPacket();
 
-    socket.sendTo(newMessage, IPv4Address::ALL_HOSTS_MCAST, 12345);
+    socket.sendTo(newMessage, *(new IPv4Address("10.0.0.136")), 12345);
 }
 
 void aodvTraCI::handlePositionUpdate() {

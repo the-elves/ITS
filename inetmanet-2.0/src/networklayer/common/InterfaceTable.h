@@ -113,6 +113,7 @@ class INET_API InterfaceTable : public cSimpleModule, public IInterfaceTable, pr
     virtual void handleMessage(cMessage *);
 
   public:
+    virtual void printAllInterfaceNames();
     /**
      * Called by the NotificationBoard whenever a change of a category
      * occurs to which this client has subscribed.

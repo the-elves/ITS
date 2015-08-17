@@ -1,0 +1,4059 @@
+version 2
+run AODVVANET-Simple-100-0-20150817-19:40:36-5236
+attr configname AODVVANET-Simple-100
+attr datetime 20150817-19:40:36
+attr experiment AODVVANET-Simple-100
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network AODVVANET
+attr processid 5236
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar AODVVANET.vehicle[0].mobility 	startTime 	8
+scalar AODVVANET.vehicle[0].mobility 	totalTime 	45
+scalar AODVVANET.vehicle[0].mobility 	stopTime 	46
+scalar AODVVANET.vehicle[0].mobility 	minSpeed 	3.9572089270348
+scalar AODVVANET.vehicle[0].mobility 	maxSpeed 	13.981399804966
+scalar AODVVANET.vehicle[0].mobility 	totalDistance 	478.81311625472
+scalar AODVVANET.vehicle[0].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[0].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[0].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[0].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[0].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[0].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[0].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[0].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[0].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[0].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[0].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[0].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[0].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[0].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[0].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[0].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[0].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[0].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[0].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[0].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[0].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[0].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[0].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[0].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[0].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[0].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[0].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[0].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[2].mobility 	startTime 	13
+scalar AODVVANET.vehicle[2].mobility 	totalTime 	86
+scalar AODVVANET.vehicle[2].mobility 	stopTime 	87
+scalar AODVVANET.vehicle[2].mobility 	minSpeed 	3.9312616036609
+scalar AODVVANET.vehicle[2].mobility 	maxSpeed 	13.99665325264
+scalar AODVVANET.vehicle[2].mobility 	totalDistance 	981.14436203843
+scalar AODVVANET.vehicle[2].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[2].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[2].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[2].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[2].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[2].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[2].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[2].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[2].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[2].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[2].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[2].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[2].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[2].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[2].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[2].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[2].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[2].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[2].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[2].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[2].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[2].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[2].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[2].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[2].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[2].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[2].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[2].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[8].mobility 	startTime 	31
+scalar AODVVANET.vehicle[8].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[8].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[8].mobility 	minSpeed 	3.9558416770938
+scalar AODVVANET.vehicle[8].mobility 	maxSpeed 	13.995671613319
+scalar AODVVANET.vehicle[8].mobility 	totalDistance 	1048.8202342645
+scalar AODVVANET.vehicle[8].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[8].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[8].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[8].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[8].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[8].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[8].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[8].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[8].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[8].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[8].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[8].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[8].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[8].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[8].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[8].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[8].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[8].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[8].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[8].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[8].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[8].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[8].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[8].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[8].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[8].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[8].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[8].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[9].mobility 	startTime 	35
+scalar AODVVANET.vehicle[9].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[9].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[9].mobility 	minSpeed 	4.0265319740693
+scalar AODVVANET.vehicle[9].mobility 	maxSpeed 	13.998842199228
+scalar AODVVANET.vehicle[9].mobility 	totalDistance 	993.57597437989
+scalar AODVVANET.vehicle[9].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[9].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[9].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[9].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[9].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[9].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[9].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[9].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[9].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[9].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[9].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[9].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[9].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[9].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[9].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[9].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[9].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[9].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[9].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[9].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[9].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[9].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[9].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[9].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[9].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[9].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[9].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[9].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[10].mobility 	startTime 	40
+scalar AODVVANET.vehicle[10].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[10].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[10].mobility 	minSpeed 	3.8461734553984
+scalar AODVVANET.vehicle[10].mobility 	maxSpeed 	13.999298311833
+scalar AODVVANET.vehicle[10].mobility 	totalDistance 	923.66034736798
+scalar AODVVANET.vehicle[10].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[10].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[10].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[10].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[10].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[10].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[10].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[10].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[10].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[10].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[10].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[10].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[10].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[10].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[10].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[10].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[10].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[10].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[10].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[10].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[10].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[10].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[10].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[10].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[10].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[10].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[10].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[10].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[11].mobility 	startTime 	45
+scalar AODVVANET.vehicle[11].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[11].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[11].mobility 	minSpeed 	4.2750514588305
+scalar AODVVANET.vehicle[11].mobility 	maxSpeed 	13.999341939832
+scalar AODVVANET.vehicle[11].mobility 	totalDistance 	853.9823499031
+scalar AODVVANET.vehicle[11].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[11].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[11].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[11].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[11].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[11].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[11].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[11].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[11].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[11].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[11].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[11].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[11].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[11].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[11].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[11].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[11].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[11].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[11].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[11].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[11].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[11].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[11].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[11].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[11].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[11].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[11].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[11].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[12].mobility 	startTime 	48
+scalar AODVVANET.vehicle[12].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[12].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[12].mobility 	minSpeed 	3.9313345573916
+scalar AODVVANET.vehicle[12].mobility 	maxSpeed 	13.999173701964
+scalar AODVVANET.vehicle[12].mobility 	totalDistance 	814.79218278986
+scalar AODVVANET.vehicle[12].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[12].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[12].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[12].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[12].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[12].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[12].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[12].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[12].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[12].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[12].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[12].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[12].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[12].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[12].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[12].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[12].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[12].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[12].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[12].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[12].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[12].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[12].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[12].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[12].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[12].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[12].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[12].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[13].mobility 	startTime 	49
+scalar AODVVANET.vehicle[13].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[13].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[13].mobility 	minSpeed 	4.0150458438643
+scalar AODVVANET.vehicle[13].mobility 	maxSpeed 	13.999997396106
+scalar AODVVANET.vehicle[13].mobility 	totalDistance 	798.60994307424
+scalar AODVVANET.vehicle[13].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[13].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[13].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[13].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[13].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[13].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[13].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[13].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[13].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[13].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[13].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[13].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[13].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[13].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[13].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[13].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[13].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[13].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[13].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[13].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[13].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[13].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[13].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[13].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[13].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[13].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[13].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[13].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[14].mobility 	startTime 	52
+scalar AODVVANET.vehicle[14].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[14].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[14].mobility 	minSpeed 	4.2137332982994
+scalar AODVVANET.vehicle[14].mobility 	maxSpeed 	13.996812054948
+scalar AODVVANET.vehicle[14].mobility 	totalDistance 	759.61138983832
+scalar AODVVANET.vehicle[14].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[14].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[14].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[14].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[14].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[14].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[14].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[14].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[14].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[14].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[14].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[14].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[14].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[14].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[14].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[14].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[14].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[14].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[14].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[14].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[14].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[14].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[14].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[14].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[14].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[14].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[14].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[14].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[1].mobility 	startTime 	12
+scalar AODVVANET.vehicle[1].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[1].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[1].mobility 	minSpeed 	4.1314942782517
+scalar AODVVANET.vehicle[1].mobility 	maxSpeed 	13.999992804453
+scalar AODVVANET.vehicle[1].mobility 	totalDistance 	1314.821209062
+scalar AODVVANET.vehicle[1].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[1].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[1].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[1].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[1].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[1].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[1].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[1].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[1].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[1].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[1].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[1].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[1].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[1].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[1].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[1].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[1].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[1].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[1].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[1].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[1].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[1].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[1].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[1].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[1].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[1].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[1].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[1].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[15].mobility 	startTime 	68
+scalar AODVVANET.vehicle[15].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[15].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[15].mobility 	minSpeed 	4.0164078250934
+scalar AODVVANET.vehicle[15].mobility 	maxSpeed 	13.994766629937
+scalar AODVVANET.vehicle[15].mobility 	totalDistance 	513.82077709661
+scalar AODVVANET.vehicle[15].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[15].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[15].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[15].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[15].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[15].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[15].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[15].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[15].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[15].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[15].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[15].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[15].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[15].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"sent and received bits" 	7440
+scalar AODVVANET.vehicle[15].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[15].wlan.mac 	rcvdPkFromHL:count 	15
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[15].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	930
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].wlan.mac 	passedUpPk:count 	26
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[15].wlan.mac 	passedUpPk:sum(packetBytes) 	1612
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].wlan.mac 	rcvdPkFromLL:count 	26
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[15].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	1612
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].wlan.mac 	sentDownPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[15].wlan.mac 	sentDownPk:sum(packetBytes) 	930
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[15].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[15].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[15].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[15].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[15].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[15].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[15].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[15].wlan.radio 	radioState:count 	83
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[16].mobility 	startTime 	71
+scalar AODVVANET.vehicle[16].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[16].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[16].mobility 	minSpeed 	4.0398735602959
+scalar AODVVANET.vehicle[16].mobility 	maxSpeed 	13.993403561295
+scalar AODVVANET.vehicle[16].mobility 	totalDistance 	491.01666351175
+scalar AODVVANET.vehicle[16].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[16].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[16].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[16].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[16].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[16].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[16].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[16].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[16].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[16].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[16].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[16].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[16].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[16].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[16].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[16].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[16].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[16].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[16].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[16].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[16].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[16].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[16].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[16].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[16].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[16].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[16].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[16].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[17].mobility 	startTime 	75
+scalar AODVVANET.vehicle[17].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[17].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[17].mobility 	minSpeed 	3.7336421224147
+scalar AODVVANET.vehicle[17].mobility 	maxSpeed 	13.998174717848
+scalar AODVVANET.vehicle[17].mobility 	totalDistance 	435.30381306107
+scalar AODVVANET.vehicle[17].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[17].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[17].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[17].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[17].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[17].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[17].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[17].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[17].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[17].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[17].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[17].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[17].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[17].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[17].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[17].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[17].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[17].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[17].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[17].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[17].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[17].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[17].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[17].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[17].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[17].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[17].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[17].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[18].mobility 	startTime 	94
+scalar AODVVANET.vehicle[18].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[18].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[18].mobility 	minSpeed 	4.1860997750905
+scalar AODVVANET.vehicle[18].mobility 	maxSpeed 	13.965974565358
+scalar AODVVANET.vehicle[18].mobility 	totalDistance 	174.46339985555
+scalar AODVVANET.vehicle[18].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[18].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[18].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[18].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[18].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[18].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[18].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[18].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[18].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[18].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[18].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[18].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[18].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[18].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[18].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[18].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[18].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].wlan.mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[18].wlan.mac 	passedUpPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].wlan.mac 	rcvdPkFromLL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[18].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[18].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[18].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[18].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[18].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[18].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[18].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[18].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[18].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[18].wlan.radio 	radioState:count 	25
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[19].mobility 	startTime 	97
+scalar AODVVANET.vehicle[19].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[19].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[19].mobility 	minSpeed 	4.0553660716966
+scalar AODVVANET.vehicle[19].mobility 	maxSpeed 	13.970434648853
+scalar AODVVANET.vehicle[19].mobility 	totalDistance 	131.66082432692
+scalar AODVVANET.vehicle[19].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[19].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[19].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[19].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[19].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[19].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[19].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[19].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[19].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[19].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[19].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[19].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[19].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[19].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[19].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[19].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[19].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[19].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[19].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[19].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[19].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[19].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[19].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[19].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[19].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[19].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[19].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[19].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[21].mobility 	startTime 	102
+scalar AODVVANET.vehicle[21].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[21].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[21].mobility 	minSpeed 	3.05482239869
+scalar AODVVANET.vehicle[21].mobility 	maxSpeed 	13.995065353899
+scalar AODVVANET.vehicle[21].mobility 	totalDistance 	55.450455121249
+scalar AODVVANET.vehicle[21].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[21].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[21].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[21].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[21].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[21].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[21].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[21].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[21].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[21].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[21].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[21].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[21].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[21].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"number of collisions" 	1
+scalar AODVVANET.vehicle[21].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"sent and received bits" 	4464
+scalar AODVVANET.vehicle[21].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[21].wlan.mac 	rcvdPkFromHL:count 	9
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[21].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	558
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].wlan.mac 	passedUpPk:count 	21
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[21].wlan.mac 	passedUpPk:sum(packetBytes) 	1302
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].wlan.mac 	rcvdPkFromLL:count 	22
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[21].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	1364
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].wlan.mac 	sentDownPk:count 	9
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[21].wlan.mac 	sentDownPk:sum(packetBytes) 	558
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[21].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[21].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[21].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[21].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[21].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[21].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[21].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[21].wlan.radio 	radioState:count 	63
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[22].mobility 	startTime 	105
+scalar AODVVANET.vehicle[22].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[22].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[22].mobility 	minSpeed 	3.7263887466895
+scalar AODVVANET.vehicle[22].mobility 	maxSpeed 	9.6095340431211
+scalar AODVVANET.vehicle[22].mobility 	totalDistance 	23.450958395723
+scalar AODVVANET.vehicle[22].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[22].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[22].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[22].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[22].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[22].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[22].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[22].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[22].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[22].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[22].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[22].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[22].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[22].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"sent and received bits" 	3472
+scalar AODVVANET.vehicle[22].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[22].wlan.mac 	rcvdPkFromHL:count 	7
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[22].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	434
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].wlan.mac 	passedUpPk:count 	11
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[22].wlan.mac 	passedUpPk:sum(packetBytes) 	682
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].wlan.mac 	rcvdPkFromLL:count 	11
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[22].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	682
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].wlan.mac 	sentDownPk:count 	7
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[22].wlan.mac 	sentDownPk:sum(packetBytes) 	434
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[22].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[22].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[22].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[22].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[22].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[22].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[22].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[22].wlan.radio 	radioState:count 	37
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[23].mobility 	startTime 	109
+scalar AODVVANET.vehicle[23].mobility 	totalTime 	0
+scalar AODVVANET.vehicle[23].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[23].mobility 	totalDistance 	0
+scalar AODVVANET.vehicle[23].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[23].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[23].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[23].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[23].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[23].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[23].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[23].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[23].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[23].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[23].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[23].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[23].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[23].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"sent and received bits" 	2480
+scalar AODVVANET.vehicle[23].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[23].wlan.mac 	rcvdPkFromHL:count 	5
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[23].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	310
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].wlan.mac 	passedUpPk:count 	9
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[23].wlan.mac 	passedUpPk:sum(packetBytes) 	558
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].wlan.mac 	rcvdPkFromLL:count 	9
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[23].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	558
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].wlan.mac 	sentDownPk:count 	5
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[23].wlan.mac 	sentDownPk:sum(packetBytes) 	310
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[23].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[23].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[23].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[23].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[23].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[23].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[23].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[23].wlan.radio 	radioState:count 	29
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[3].mobility 	startTime 	18
+scalar AODVVANET.vehicle[3].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[3].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[3].mobility 	minSpeed 	4.0419951912493
+scalar AODVVANET.vehicle[3].mobility 	maxSpeed 	13.999330114706
+scalar AODVVANET.vehicle[3].mobility 	totalDistance 	1231.8701501573
+scalar AODVVANET.vehicle[3].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[3].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[3].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[3].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[3].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[3].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[3].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[3].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[3].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[3].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[3].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[3].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[3].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[3].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"sent and received bits" 	5952
+scalar AODVVANET.vehicle[3].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[3].wlan.mac 	rcvdPkFromHL:count 	12
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[3].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	744
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].wlan.mac 	passedUpPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[3].wlan.mac 	passedUpPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].wlan.mac 	rcvdPkFromLL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[3].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].wlan.mac 	sentDownPk:count 	12
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[3].wlan.mac 	sentDownPk:sum(packetBytes) 	744
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[3].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[3].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[3].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[3].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[3].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[3].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[3].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[3].wlan.radio 	radioState:count 	37
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[4].mobility 	startTime 	20
+scalar AODVVANET.vehicle[4].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[4].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[4].mobility 	minSpeed 	4.0272855152232
+scalar AODVVANET.vehicle[4].mobility 	maxSpeed 	13.998641843155
+scalar AODVVANET.vehicle[4].mobility 	totalDistance 	1200.7951841429
+scalar AODVVANET.vehicle[4].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[4].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[4].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[4].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[4].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[4].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[4].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[4].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[4].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[4].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[4].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[4].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[4].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[4].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[4].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[4].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[4].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[4].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[4].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[4].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[4].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[4].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[4].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[4].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[4].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[4].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[4].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[4].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[5].mobility 	startTime 	22
+scalar AODVVANET.vehicle[5].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[5].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[5].mobility 	minSpeed 	4.0015480331578
+scalar AODVVANET.vehicle[5].mobility 	maxSpeed 	13.999843015617
+scalar AODVVANET.vehicle[5].mobility 	totalDistance 	1174.5657233145
+scalar AODVVANET.vehicle[5].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[5].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[5].udp 	passedUpPk:count 	1
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[5].udp 	rcvdPk:count 	1
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[5].udp 	rcvdPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[5].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].networkLayer.arp 	failedARPResolution:count 	1
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[5].networkLayer.arp 	completedARPResolution:count 	1
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[5].networkLayer.arp 	initiatedARPResolution:count 	2
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[5].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[5].networkLayer.arp 	sentReq:count 	4
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[5].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[5].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[5].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[5].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].wlan.mac 	"number of received packets" 	2
+scalar AODVVANET.vehicle[5].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	"sent and received bits" 	2736
+scalar AODVVANET.vehicle[5].wlan.mac 	"sent packet within AC 0" 	1
+scalar AODVVANET.vehicle[5].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	"sentWithoutRetry AC 0" 	1
+scalar AODVVANET.vehicle[5].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[5].wlan.mac 	rcvdPkFromHL:count 	5
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[5].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	342
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].wlan.mac 	passedUpPk:count 	3
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[5].wlan.mac 	passedUpPk:sum(packetBytes) 	202
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].wlan.mac 	rcvdPkFromLL:count 	4
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[5].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	216
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].wlan.mac 	sentDownPk:count 	7
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[5].wlan.mac 	sentDownPk:sum(packetBytes) 	370
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[5].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[5].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[5].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[5].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[5].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[5].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[5].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[5].wlan.radio 	radioState:count 	23
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[20].mobility 	startTime 	98
+scalar AODVVANET.vehicle[20].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[20].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[20].mobility 	minSpeed 	13.878031884937
+scalar AODVVANET.vehicle[20].mobility 	maxSpeed 	13.999767327376
+scalar AODVVANET.vehicle[20].mobility 	totalDistance 	153.28777536209
+scalar AODVVANET.vehicle[20].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[20].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[20].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[20].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[20].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[20].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[20].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[20].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[20].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[20].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[20].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[20].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[20].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[20].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"sent and received bits" 	2976
+scalar AODVVANET.vehicle[20].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[20].wlan.mac 	rcvdPkFromHL:count 	6
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[20].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[20].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[20].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].wlan.mac 	sentDownPk:count 	6
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[20].wlan.mac 	sentDownPk:sum(packetBytes) 	372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[20].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[20].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[20].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[20].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[20].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[20].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[20].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[20].wlan.radio 	radioState:count 	13
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[6].mobility 	startTime 	25
+scalar AODVVANET.vehicle[6].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[6].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[6].mobility 	minSpeed 	4.1049386252233
+scalar AODVVANET.vehicle[6].mobility 	maxSpeed 	13.999498154137
+scalar AODVVANET.vehicle[6].mobility 	totalDistance 	1132.2699757186
+scalar AODVVANET.vehicle[6].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[6].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[6].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[6].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[6].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[6].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[6].networkLayer.arp 	completedARPResolution:count 	1
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[6].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[6].networkLayer.arp 	sentReply:count 	1
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[6].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[6].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[6].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[6].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[6].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].wlan.mac 	"number of received packets" 	1
+scalar AODVVANET.vehicle[6].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	"sent and received bits" 	1616
+scalar AODVVANET.vehicle[6].wlan.mac 	"sent packet within AC 0" 	2
+scalar AODVVANET.vehicle[6].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	"sentWithoutRetry AC 0" 	2
+scalar AODVVANET.vehicle[6].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[6].wlan.mac 	rcvdPkFromHL:count 	3
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[6].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	202
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].wlan.mac 	passedUpPk:count 	2
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[6].wlan.mac 	passedUpPk:sum(packetBytes) 	132
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].wlan.mac 	rcvdPkFromLL:count 	4
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[6].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	160
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].wlan.mac 	sentDownPk:count 	4
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[6].wlan.mac 	sentDownPk:sum(packetBytes) 	216
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[6].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[6].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[6].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[6].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[6].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[6].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[6].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[6].wlan.radio 	radioState:count 	17
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.vehicle[7].mobility 	startTime 	27
+scalar AODVVANET.vehicle[7].mobility 	totalTime 	109
+scalar AODVVANET.vehicle[7].mobility 	stopTime 	110
+scalar AODVVANET.vehicle[7].mobility 	minSpeed 	3.8445905906458
+scalar AODVVANET.vehicle[7].mobility 	maxSpeed 	13.997692765314
+scalar AODVVANET.vehicle[7].mobility 	totalDistance 	1102.61454221
+scalar AODVVANET.vehicle[7].udp 	droppedPkBadChecksum:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (checksum error), count"
+scalar AODVVANET.vehicle[7].udp 	droppedPkWrongPort:count 	0
+attr interpolationmode  none
+attr title  "packets dropped (wrong port), count"
+scalar AODVVANET.vehicle[7].udp 	passedUpPk:count 	0
+attr interpolationmode  none
+attr title  "packets passed up, count"
+scalar AODVVANET.vehicle[7].udp 	rcvdPk:count 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar AODVVANET.vehicle[7].udp 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].udp 	sentPk:count 	1
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar AODVVANET.vehicle[7].udp 	sentPk:sum(packetBytes) 	8
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.vehicle[7].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.vehicle[7].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.vehicle[7].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.vehicle[7].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.vehicle[7].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.vehicle[7].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.vehicle[7].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.vehicle[7].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"sent and received bits" 	9424
+scalar AODVVANET.vehicle[7].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.vehicle[7].wlan.mac 	rcvdPkFromHL:count 	19
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.vehicle[7].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	1178
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].wlan.mac 	passedUpPk:count 	21
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.vehicle[7].wlan.mac 	passedUpPk:sum(packetBytes) 	1302
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].wlan.mac 	rcvdPkFromLL:count 	21
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.vehicle[7].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	1302
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].wlan.mac 	sentDownPk:count 	19
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.vehicle[7].wlan.mac 	sentDownPk:sum(packetBytes) 	1178
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.vehicle[7].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.vehicle[7].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.vehicle[7].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.vehicle[7].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.vehicle[7].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.vehicle[7].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.vehicle[7].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.vehicle[7].wlan.radio 	radioState:count 	81
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+scalar AODVVANET.rsu[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar AODVVANET.rsu[0].networkLayer.arp 	completedARPResolution:count 	0
+attr title  "ARP completed resolutions, count"
+scalar AODVVANET.rsu[0].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar AODVVANET.rsu[0].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar AODVVANET.rsu[0].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar AODVVANET.rsu[0].wlan.mgmt 	dataQueueLen:max 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar AODVVANET.rsu[0].wlan.mgmt 	dataQueueLen:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar AODVVANET.rsu[0].wlan.mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar AODVVANET.rsu[0].wlan.mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar AODVVANET.rsu[0].wlan.mac 	"number of received packets" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"number of collisions" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"number of internal collisions" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"number of retry for AC 0" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"sent and received bits" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"sent packet within AC 0" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"sent in TXOP " 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"sentWithoutRetry AC 0" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"numGivenUp AC 0" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	"numDropped AC 0" 	0
+scalar AODVVANET.rsu[0].wlan.mac 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar AODVVANET.rsu[0].wlan.mac 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar AODVVANET.rsu[0].wlan.mac 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar AODVVANET.rsu[0].wlan.mac 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar AODVVANET.rsu[0].wlan.mac 	rcvdPkFromLL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar AODVVANET.rsu[0].wlan.mac 	rcvdPkFromLL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar AODVVANET.rsu[0].wlan.mac 	sentDownPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar AODVVANET.rsu[0].wlan.mac 	sentDownPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar AODVVANET.rsu[0].wlan.radio 	lossRate:min 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar AODVVANET.rsu[0].wlan.radio 	lossRate:max 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar AODVVANET.rsu[0].wlan.radio 	lossRate:timeavg 	-nan
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+statistic AODVVANET.rsu[0].wlan.radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar AODVVANET.rsu[0].wlan.radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar AODVVANET.rsu[0].wlan.radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar AODVVANET.rsu[0].wlan.radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar AODVVANET.rsu[0].wlan.radio 	radioState:count 	1
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"

@@ -455,6 +455,15 @@ InterfaceEntry *InterfaceTable::getInterfaceByName(const char *name)
     return NULL;
 }
 
+void InterfaceTable::printAllInterfaceNames(){
+    char a[256] ="";
+    int n = idToInterface.size();
+    ev<<"##@##ITn"<<n;
+    for(int i=0; i<n; i++){
+        strcat(a,idToInterface[i]->getName());
+    }
+    ev<<a;
+ }
 InterfaceEntry *InterfaceTable::getFirstLoopbackInterface()
 {
     Enter_Method_Silent();
@@ -474,6 +483,8 @@ InterfaceEntry *InterfaceTable::getFirstMulticastInterface()
             return idToInterface[i];
     return NULL;
 }
+
+//prints all interface names
 
 bool InterfaceTable::handleOperationStage(LifecycleOperation *operation, int stage, IDoneCallback *doneCallback)
 {

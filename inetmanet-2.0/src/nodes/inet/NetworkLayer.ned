@@ -49,7 +49,7 @@ module NetworkLayer
         output igmpOut;
 
     submodules:
-        configurator: IPv4NodeConfigurator {
+        configurator:  IPv4NodeConfigurator{
             @display("p=39,158");
         }
         ip: IPv4 {
