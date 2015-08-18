@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by opp_msgc 4.4 from vanetrouting/base/Vanet_ControlInfoBreakLink.msg.
+// Generated file, do not edit! Created by opp_msgc 4.4 from src/vanetrouting/base/Vanet_ControlInfoBreakLink.msg.
 //
 
 #ifndef _VANET_CONTROLINFOBREAKLINK_M_H_
@@ -20,7 +20,7 @@
 
 
 /**
- * Class generated from <tt>vanetrouting/base/Vanet_ControlInfoBreakLink.msg</tt> by opp_msgc.
+ * Class generated from <tt>src/vanetrouting/base/Vanet_ControlInfoBreakLink.msg</tt> by opp_msgc.
  * <pre>
  * class Vanet_ControlInfoBreakLink
  * {

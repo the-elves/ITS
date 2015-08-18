@@ -1,5 +1,5 @@
 //
-// Generated file, do not edit! Created by opp_msgc 4.4 from vanetrouting/base/ControlVanetRouting.msg.
+// Generated file, do not edit! Created by opp_msgc 4.4 from src/vanetrouting/base/ControlVanetRouting.msg.
 //
 
 #ifndef _CONTROLVANETROUTING_M_H_
@@ -20,7 +20,7 @@
 
 
 /**
- * Enum generated from <tt>vanetrouting/base/ControlVanetRouting.msg</tt> by opp_msgc.
+ * Enum generated from <tt>src/vanetrouting/base/ControlVanetRouting.msg</tt> by opp_msgc.
  * <pre>
  * enum VanetControlType
  * {
@@ -38,7 +38,7 @@ enum VanetControlType {
 };
 
 /**
- * Class generated from <tt>vanetrouting/base/ControlVanetRouting.msg</tt> by opp_msgc.
+ * Class generated from <tt>src/vanetrouting/base/ControlVanetRouting.msg</tt> by opp_msgc.
  * <pre>
  * packet ControlVanetRouting
  * {

@@ -147,29 +147,29 @@ const char *cObjectDescriptor::getFieldProperty(void *object, int field, const c
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"hint")) return "C++ class name";
-            if (!strcmp(propertyname,"eventlog")) return "skip";
             if (!strcmp(propertyname,"group")) return "base";
+            if (!strcmp(propertyname,"eventlog")) return "skip";
+            if (!strcmp(propertyname,"hint")) return "C++ class name";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"group")) return "base";
             if (!strcmp(propertyname,"hint")) return "If object is part of a module/gate vector: name with index";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"hint")) return "Hierarchical name, composed of full names of this object and its owners/parents";
             if (!strcmp(propertyname,"eventlog")) return "skip";
             if (!strcmp(propertyname,"group")) return "base";
+            if (!strcmp(propertyname,"hint")) return "Hierarchical name, composed of full names of this object and its owners/parents";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "Text provided by the object's \"info\" method";
             if (!strcmp(propertyname,"getter")) return "info";
-            if (!strcmp(propertyname,"group")) return "base";
             if (!strcmp(propertyname,"eventlog")) return "skip";
+            if (!strcmp(propertyname,"group")) return "base";
             return NULL;
         case 4:
+            if (!strcmp(propertyname,"hint")) return "Text provided by the object's \"detailedInfo\" method";
             if (!strcmp(propertyname,"group")) return "base";
             if (!strcmp(propertyname,"eventlog")) return "skip";
-            if (!strcmp(propertyname,"hint")) return "Text provided by the object's \"detailedInfo\" method";
             if (!strcmp(propertyname,"getter")) return "detailedInfo";
             return NULL;
         default: return NULL;
@@ -365,9 +365,9 @@ const char *cNamedObjectDescriptor::getFieldProperty(void *object, int field, co
     }
     switch (field) {
         case 0:
+            if (!strcmp(propertyname,"group")) return "base";
             if (!strcmp(propertyname,"hint")) return "An editable string attribute of the object, also used for fullName and fullPath";
             if (!strcmp(propertyname,"editable")) return "";
-            if (!strcmp(propertyname,"group")) return "base";
             return NULL;
         default: return NULL;
     }
@@ -556,8 +556,8 @@ const char *cOwnedObjectDescriptor::getFieldProperty(void *object, int field, co
     switch (field) {
         case 0:
             if (!strcmp(propertyname,"hint")) return "Module or container this object belongs to";
-            if (!strcmp(propertyname,"eventlog")) return "skip";
             if (!strcmp(propertyname,"group")) return "base";
+            if (!strcmp(propertyname,"eventlog")) return "skip";
             return NULL;
         default: return NULL;
     }
@@ -915,9 +915,9 @@ const char *cDefaultListDescriptor::getFieldProperty(void *object, int field, co
     switch (field) {
         case 0:
             if (!strcmp(propertyname,"getter")) return "defaultListGet";
+            if (!strcmp(propertyname,"group")) return "owned objects";
             if (!strcmp(propertyname,"sizeGetter")) return "defaultListSize";
             if (!strcmp(propertyname,"hint")) return "List of objects directly held by this component";
-            if (!strcmp(propertyname,"group")) return "owned objects";
             return NULL;
         default: return NULL;
     }
@@ -1106,10 +1106,10 @@ const char *cDisplayStringDescriptor::getFieldProperty(void *object, int field, 
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"editable")) return "";
             if (!strcmp(propertyname,"hint")) return "The editable display string itself";
-            if (!strcmp(propertyname,"setter")) return "parse";
             if (!strcmp(propertyname,"getter")) return "str";
+            if (!strcmp(propertyname,"editable")) return "";
+            if (!strcmp(propertyname,"setter")) return "parse";
             return NULL;
         default: return NULL;
     }
@@ -1305,15 +1305,15 @@ const char *cPropertyDescriptor::getFieldProperty(void *object, int field, const
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"getter")) return "isImplicit";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"getter")) return "isImplicit";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"hint")) return "Name and value";
             if (!strcmp(propertyname,"getter")) return "info";
+            if (!strcmp(propertyname,"hint")) return "Name and value";
             return NULL;
         default: return NULL;
     }
@@ -1504,8 +1504,8 @@ const char *cPropertiesDescriptor::getFieldProperty(void *object, int field, con
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"hint")) return "The property list";
             if (!strcmp(propertyname,"sizeGetter")) return "getNumProperties";
+            if (!strcmp(propertyname,"hint")) return "The property list";
             if (!strcmp(propertyname,"getter")) return "get";
             return NULL;
         default: return NULL;
@@ -1707,26 +1707,26 @@ const char *cComponentDescriptor::getFieldProperty(void *object, int field, cons
     }
     switch (field) {
         case 0:
+            if (!strcmp(propertyname,"hint")) return "Whether this component is a module or a channel";
             if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"getter")) return "isModule";
-            if (!strcmp(propertyname,"hint")) return "Whether this component is a module or a channel";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "The object that represents the type declaration for this component";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"getter")) return "par";
+            if (!strcmp(propertyname,"label")) return "parameters";
             if (!strcmp(propertyname,"sizeGetter")) return "getNumParams";
             if (!strcmp(propertyname,"hint")) return "Parameters";
-            if (!strcmp(propertyname,"label")) return "parameters";
             if (!strcmp(propertyname,"group")) return "parameters, gates";
+            if (!strcmp(propertyname,"getter")) return "par";
             return NULL;
         case 3:
-            if (!strcmp(propertyname,"group")) return "parameters, gates";
-            if (!strcmp(propertyname,"hint")) return "Properties";
             if (!strcmp(propertyname,"label")) return "properties";
+            if (!strcmp(propertyname,"hint")) return "Properties";
             if (!strcmp(propertyname,"getter")) return "getProperties";
+            if (!strcmp(propertyname,"group")) return "parameters, gates";
             return NULL;
         default: return NULL;
     }
@@ -1924,8 +1924,8 @@ const char *cChannelDescriptor::getFieldProperty(void *object, int field, const 
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "Controls appearance of this channel in the GUI";
+            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         default: return NULL;
     }
@@ -2455,9 +2455,9 @@ const char *cDatarateChannelDescriptor::getFieldProperty(void *object, int field
     }
     switch (field) {
         case 0:
+            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"getter")) return "isBusy";
             if (!strcmp(propertyname,"hint")) return "If channel is currently transmitting";
-            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"hint")) return "If busy: when currently active transmissions will finish";
@@ -2678,33 +2678,33 @@ const char *cModuleDescriptor::getFieldProperty(void *object, int field, const c
             if (!strcmp(propertyname,"hint")) return "Unique module ID -- IDs of deleted modules are not issued again";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"hint")) return "Whether this is a simple module";
-            if (!strcmp(propertyname,"getter")) return "isSimple";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"getter")) return "isSimple";
+            if (!strcmp(propertyname,"hint")) return "Whether this is a simple module";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"group")) return "fields";
-            if (!strcmp(propertyname,"getter")) return "isVector";
             if (!strcmp(propertyname,"hint")) return "Whether this module is part of a module vector";
+            if (!strcmp(propertyname,"getter")) return "isVector";
+            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "If vector: index of this module in its module vector";
             if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 4:
-            if (!strcmp(propertyname,"group")) return "fields";
-            if (!strcmp(propertyname,"getter")) return "size";
             if (!strcmp(propertyname,"hint")) return "If vector: size of module vector this module belongs to";
+            if (!strcmp(propertyname,"getter")) return "size";
+            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 5:
             if (!strcmp(propertyname,"hint")) return "Controls appearance of this module in the GUI";
             if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 6:
-            if (!strcmp(propertyname,"hint")) return "Module gates";
             if (!strcmp(propertyname,"label")) return "gates";
-            if (!strcmp(propertyname,"getter")) return "gateByOrdinal";
+            if (!strcmp(propertyname,"hint")) return "Module gates";
             if (!strcmp(propertyname,"sizeGetter")) return "gateCount";
+            if (!strcmp(propertyname,"getter")) return "gateByOrdinal";
             if (!strcmp(propertyname,"group")) return "parameters, gates";
             return NULL;
         default: return NULL;
@@ -2921,8 +2921,8 @@ const char *cSimpleModuleDescriptor::getFieldProperty(void *object, int field, c
     switch (field) {
         case 0:
             if (!strcmp(propertyname,"hint")) return "Whether this module has terminated";
-            if (!strcmp(propertyname,"getter")) return "isTerminated";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"getter")) return "isTerminated";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"hint")) return "Whether this simple module was programmed using the \"activity\" or the \"handleMessage\" C++ method";
@@ -2930,8 +2930,8 @@ const char *cSimpleModuleDescriptor::getFieldProperty(void *object, int field, c
             if (!strcmp(propertyname,"group")) return "activity";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"group")) return "activity";
             if (!strcmp(propertyname,"hint")) return "If module uses \"activity\": stack size allocated for this module -- zero means info not available";
+            if (!strcmp(propertyname,"group")) return "activity";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "If module uses \"activity\": stack actually used by this module -- zero means info not available";
@@ -3467,9 +3467,9 @@ const char *cModuleTypeDescriptor::getFieldProperty(void *object, int field, con
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"getter")) return "isNetwork";
             if (!strcmp(propertyname,"hint")) return "Whether this module type can be used as toplevel module";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"getter")) return "isNetwork";
             return NULL;
         default: return NULL;
     }
@@ -3825,9 +3825,9 @@ const char *cRegistrationListDescriptor::getFieldProperty(void *object, int fiel
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"getter")) return "get";
-            if (!strcmp(propertyname,"sizeGetter")) return "size";
             if (!strcmp(propertyname,"hint")) return "Contained objects";
+            if (!strcmp(propertyname,"sizeGetter")) return "size";
+            if (!strcmp(propertyname,"getter")) return "get";
             return NULL;
         default: return NULL;
     }
@@ -4074,61 +4074,61 @@ const char *cGateDescriptor::getFieldProperty(void *object, int field, const cha
             if (!strcmp(propertyname,"hint")) return "Gate type";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "Gate id, unique within this module";
+            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"hint")) return "Whether this gate is part of a gate vector";
-            if (!strcmp(propertyname,"getter")) return "isVector";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"getter")) return "isVector";
+            if (!strcmp(propertyname,"hint")) return "Whether this gate is part of a gate vector";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "If vector: index of this gate within its gate vector";
             return NULL;
         case 4:
-            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "Only for simple module input gates, and if message transmission duration is nonzero: whether messages arriving on this gate will be given to the module at the start or the end of the reception";
+            if (!strcmp(propertyname,"group")) return "fields";
             return NULL;
         case 5:
-            if (!strcmp(propertyname,"hint")) return "Channel object associated with the connection";
             if (!strcmp(propertyname,"group")) return "connection";
+            if (!strcmp(propertyname,"hint")) return "Channel object associated with the connection";
             return NULL;
         case 6:
             if (!strcmp(propertyname,"hint")) return "The gate this one is connected to -- for output gates this points out of this module, and for input gates it points inside";
             if (!strcmp(propertyname,"group")) return "connection";
             return NULL;
         case 7:
-            if (!strcmp(propertyname,"hint")) return "The gate whose \"previousGate\" is this gate -- note that \"previous\" and \"next\" correspond to the direction of messages";
             if (!strcmp(propertyname,"group")) return "connection";
+            if (!strcmp(propertyname,"hint")) return "The gate whose \"previousGate\" is this gate -- note that \"previous\" and \"next\" correspond to the direction of messages";
             return NULL;
         case 8:
-            if (!strcmp(propertyname,"group")) return "connection";
             if (!strcmp(propertyname,"hint")) return "The last gate in the \"previousGate->previousGate->previousGate...\" chain";
+            if (!strcmp(propertyname,"group")) return "connection";
             return NULL;
         case 9:
-            if (!strcmp(propertyname,"group")) return "connection";
             if (!strcmp(propertyname,"hint")) return "The last gate in the \"nextGate->nextGate->nextGate...\" chain";
+            if (!strcmp(propertyname,"group")) return "connection";
             return NULL;
         case 10:
-            if (!strcmp(propertyname,"group")) return "connection";
             if (!strcmp(propertyname,"hint")) return "For an output gate this checks nextGate, and previousGate for an input gate";
             if (!strcmp(propertyname,"getter")) return "isConnectedOutside";
+            if (!strcmp(propertyname,"group")) return "connection";
             return NULL;
         case 11:
+            if (!strcmp(propertyname,"getter")) return "isConnectedInside";
             if (!strcmp(propertyname,"group")) return "connection";
             if (!strcmp(propertyname,"hint")) return "For an input gate this checks nextGate, and previousGate for an output gate";
-            if (!strcmp(propertyname,"getter")) return "isConnectedInside";
             return NULL;
         case 12:
+            if (!strcmp(propertyname,"group")) return "connection";
             if (!strcmp(propertyname,"getter")) return "isConnected";
             if (!strcmp(propertyname,"hint")) return "Whether the gate is fully connected -- both inside and outside for a compound module gate, and outside for a simple module gate";
-            if (!strcmp(propertyname,"group")) return "connection";
             return NULL;
         case 13:
             if (!strcmp(propertyname,"getter")) return "isPathOK";
-            if (!strcmp(propertyname,"hint")) return "The chain of connections is OK if it starts and ends at a simple module";
             if (!strcmp(propertyname,"group")) return "connection";
+            if (!strcmp(propertyname,"hint")) return "The chain of connections is OK if it starts and ends at a simple module";
             return NULL;
         default: return NULL;
     }
@@ -4352,12 +4352,12 @@ const char *cArrayDescriptor::getFieldProperty(void *object, int field, const ch
     switch (field) {
         case 0:
             if (!strcmp(propertyname,"group")) return "fields";
-            if (!strcmp(propertyname,"editable")) return "";
             if (!strcmp(propertyname,"hint")) return "Whether the array should own the objects inserted into it";
+            if (!strcmp(propertyname,"editable")) return "";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"hint")) return "Objects contained in the array";
             if (!strcmp(propertyname,"getter")) return "get";
+            if (!strcmp(propertyname,"hint")) return "Objects contained in the array";
             if (!strcmp(propertyname,"sizeGetter")) return "size";
             return NULL;
         default: return NULL;
@@ -4631,17 +4631,17 @@ const char *cMessageDescriptor::getFieldProperty(void *object, int field, const 
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"hint")) return "Automatically assigned unique identifier";
             if (!strcmp(propertyname,"group")) return "message";
+            if (!strcmp(propertyname,"hint")) return "Automatically assigned unique identifier";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"hint")) return "Identifier shared between the message and its copies";
             if (!strcmp(propertyname,"group")) return "message";
+            if (!strcmp(propertyname,"hint")) return "Identifier shared between the message and its copies";
             return NULL;
         case 2:
+            if (!strcmp(propertyname,"hint")) return "Generic user-settable attribute, usually carries \"type\" or \"role\" or \"category\" of message";
             if (!strcmp(propertyname,"group")) return "message";
             if (!strcmp(propertyname,"editable")) return "";
-            if (!strcmp(propertyname,"hint")) return "Generic user-settable attribute, usually carries \"type\" or \"role\" or \"category\" of message";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"group")) return "message";
@@ -4653,12 +4653,12 @@ const char *cMessageDescriptor::getFieldProperty(void *object, int field, const 
             if (!strcmp(propertyname,"hint")) return "Controls appearance of the message in GUI";
             return NULL;
         case 5:
-            if (!strcmp(propertyname,"hint")) return "Used with protocol stacks: carries extra information when a packet is sent between protocol layers";
             if (!strcmp(propertyname,"group")) return "message";
+            if (!strcmp(propertyname,"hint")) return "Used with protocol stacks: carries extra information when a packet is sent between protocol layers";
             return NULL;
         case 6:
-            if (!strcmp(propertyname,"hint")) return "OBSOLETE: use of \"parList\" should be replaced with message subclassing in the few models that still use it";
             if (!strcmp(propertyname,"group")) return "message";
+            if (!strcmp(propertyname,"hint")) return "OBSOLETE: use of \"parList\" should be replaced with message subclassing in the few models that still use it";
             return NULL;
         case 7:
             if (!strcmp(propertyname,"group")) return "sending";
@@ -4666,21 +4666,21 @@ const char *cMessageDescriptor::getFieldProperty(void *object, int field, const 
             if (!strcmp(propertyname,"hint")) return "Whether message is currently scheduled/in transit or not";
             return NULL;
         case 8:
-            if (!strcmp(propertyname,"group")) return "sending";
-            if (!strcmp(propertyname,"getter")) return "isSelfMessage";
             if (!strcmp(propertyname,"hint")) return "Whether message is a self-message, scheduled to be delivered back to the same module at a later time";
+            if (!strcmp(propertyname,"getter")) return "isSelfMessage";
+            if (!strcmp(propertyname,"group")) return "sending";
             return NULL;
         case 9:
-            if (!strcmp(propertyname,"hint")) return "Simulation time the message was created";
             if (!strcmp(propertyname,"group")) return "sending";
+            if (!strcmp(propertyname,"hint")) return "Simulation time the message was created";
             return NULL;
         case 10:
             if (!strcmp(propertyname,"hint")) return "Simulation time of the current or last sending/scheduling of the message";
             if (!strcmp(propertyname,"group")) return "sending";
             return NULL;
         case 11:
-            if (!strcmp(propertyname,"group")) return "sending";
             if (!strcmp(propertyname,"hint")) return "Simulation time the message will be/was delivered to the destination module";
+            if (!strcmp(propertyname,"group")) return "sending";
             return NULL;
         case 12:
             if (!strcmp(propertyname,"group")) return "sending";
@@ -4688,22 +4688,22 @@ const char *cMessageDescriptor::getFieldProperty(void *object, int field, const 
             if (!strcmp(propertyname,"editable")) return "";
             return NULL;
         case 13:
-            if (!strcmp(propertyname,"group")) return "sending";
             if (!strcmp(propertyname,"hint")) return "ID of the module performing the current or last send/schedule operation";
+            if (!strcmp(propertyname,"group")) return "sending";
             return NULL;
         case 14:
-            if (!strcmp(propertyname,"group")) return "sending";
             if (!strcmp(propertyname,"hint")) return "Module-local ID of the gate on which the message was sent out -- -1==none for self-messages and after \"sendDirect\"";
+            if (!strcmp(propertyname,"group")) return "sending";
             return NULL;
         case 15:
-            if (!strcmp(propertyname,"hint")) return "ID of the module performing the current or last send/schedule operation";
-            if (!strcmp(propertyname,"eventlog")) return "fullPath";
             if (!strcmp(propertyname,"group")) return "sending";
+            if (!strcmp(propertyname,"eventlog")) return "fullPath";
+            if (!strcmp(propertyname,"hint")) return "ID of the module performing the current or last send/schedule operation";
             return NULL;
         case 16:
-            if (!strcmp(propertyname,"hint")) return "The gate on which the message was sent out -- NULL for self-messages and after \"sendDirect\"";
-            if (!strcmp(propertyname,"group")) return "sending";
             if (!strcmp(propertyname,"eventlog")) return "fullName";
+            if (!strcmp(propertyname,"group")) return "sending";
+            if (!strcmp(propertyname,"hint")) return "The gate on which the message was sent out -- NULL for self-messages and after \"sendDirect\"";
             return NULL;
         case 17:
             if (!strcmp(propertyname,"group")) return "sending";
@@ -4715,13 +4715,13 @@ const char *cMessageDescriptor::getFieldProperty(void *object, int field, const 
             return NULL;
         case 19:
             if (!strcmp(propertyname,"hint")) return "Arrival module for current or last sending/scheduling";
-            if (!strcmp(propertyname,"eventlog")) return "fullPath";
             if (!strcmp(propertyname,"group")) return "sending";
+            if (!strcmp(propertyname,"eventlog")) return "fullPath";
             return NULL;
         case 20:
-            if (!strcmp(propertyname,"hint")) return "Arrival gate for current or last sending -- NULL for self-messages";
             if (!strcmp(propertyname,"group")) return "sending";
             if (!strcmp(propertyname,"eventlog")) return "fullName";
+            if (!strcmp(propertyname,"hint")) return "Arrival gate for current or last sending -- NULL for self-messages";
             return NULL;
         default: return NULL;
     }
@@ -4978,29 +4978,29 @@ const char *cPacketDescriptor::getFieldProperty(void *object, int field, const c
     }
     switch (field) {
         case 0:
+            if (!strcmp(propertyname,"editable")) return "";
             if (!strcmp(propertyname,"group")) return "message";
             if (!strcmp(propertyname,"hint")) return "Simulated length of the message in bits, affects transmission time and probability of bit errors when sent through a channel";
-            if (!strcmp(propertyname,"editable")) return "";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"hint")) return "Length in bytes, i.e. length in bits divided by eight";
             if (!strcmp(propertyname,"editable")) return "";
             if (!strcmp(propertyname,"group")) return "message";
+            if (!strcmp(propertyname,"hint")) return "Length in bytes, i.e. length in bits divided by eight";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"group")) return "message";
-            if (!strcmp(propertyname,"setter")) return "setBitError";
             if (!strcmp(propertyname,"getter")) return "hasBitError";
+            if (!strcmp(propertyname,"group")) return "message";
             if (!strcmp(propertyname,"hint")) return "Indicates that a bit error occurred when the message was sent through a channel with nonzero bit error rate";
             if (!strcmp(propertyname,"editable")) return "";
+            if (!strcmp(propertyname,"setter")) return "setBitError";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "Used with protocol stacks: stores an encapsulated higher-layer packet";
             return NULL;
         case 4:
-            if (!strcmp(propertyname,"getter")) return "isReceptionStart";
             if (!strcmp(propertyname,"hint")) return "When duration is nonzero: whether this message represents the start or the end of the frame reception";
             if (!strcmp(propertyname,"group")) return "sending";
+            if (!strcmp(propertyname,"getter")) return "isReceptionStart";
             return NULL;
         case 5:
             if (!strcmp(propertyname,"group")) return "sending";
@@ -5820,26 +5820,26 @@ const char *cDensityEstBaseDescriptor::getFieldProperty(void *object, int field,
     switch (field) {
         case 0:
             if (!strcmp(propertyname,"group")) return "histogram";
-            if (!strcmp(propertyname,"hint")) return "If false, the object is still collecting initial observations to be used for laying out histogram cells";
             if (!strcmp(propertyname,"getter")) return "isTransformed";
+            if (!strcmp(propertyname,"hint")) return "If false, the object is still collecting initial observations to be used for laying out histogram cells";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"hint")) return "Number of observations below the first histogram cell";
             if (!strcmp(propertyname,"group")) return "histogram";
+            if (!strcmp(propertyname,"hint")) return "Number of observations below the first histogram cell";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"hint")) return "Number of observations above the last histogram cell";
             if (!strcmp(propertyname,"group")) return "histogram";
+            if (!strcmp(propertyname,"hint")) return "Number of observations above the last histogram cell";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "Number of cells in the histogram";
             if (!strcmp(propertyname,"group")) return "histogram";
             return NULL;
         case 4:
-            if (!strcmp(propertyname,"group")) return "histogram";
             if (!strcmp(propertyname,"hint")) return "Histogram cell bounds, observation count in the cell, and density estimate in the cell";
-            if (!strcmp(propertyname,"getter")) return "internalGetCellInfo";
             if (!strcmp(propertyname,"sizeGetter")) return "getNumCells";
+            if (!strcmp(propertyname,"group")) return "histogram";
+            if (!strcmp(propertyname,"getter")) return "internalGetCellInfo";
             return NULL;
         default: return NULL;
     }
@@ -8725,10 +8725,10 @@ const char *cOutVectorDescriptor::getFieldProperty(void *object, int field, cons
     }
     switch (field) {
         case 0:
+            if (!strcmp(propertyname,"hint")) return "If disabled, values passed to this object to record are simply discarded";
             if (!strcmp(propertyname,"getter")) return "isEnabled";
             if (!strcmp(propertyname,"setter")) return "setEnabled";
             if (!strcmp(propertyname,"editable")) return "";
-            if (!strcmp(propertyname,"hint")) return "If disabled, values passed to this object to record are simply discarded";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"hint")) return "Number of values passed to this object to record";
@@ -8964,8 +8964,8 @@ const char *cParDescriptor::getFieldProperty(void *object, int field, const char
             return NULL;
         case 3:
             if (!strcmp(propertyname,"hint")) return "Whether parameter type is numeric, i.e. double or long";
-            if (!strcmp(propertyname,"getter")) return "isNumeric";
             if (!strcmp(propertyname,"group")) return "flags";
+            if (!strcmp(propertyname,"getter")) return "isNumeric";
             return NULL;
         case 4:
             if (!strcmp(propertyname,"hint")) return "Whether parameter was declared volatile in the NED file";
@@ -8973,14 +8973,14 @@ const char *cParDescriptor::getFieldProperty(void *object, int field, const char
             if (!strcmp(propertyname,"group")) return "flags";
             return NULL;
         case 5:
-            if (!strcmp(propertyname,"group")) return "flags";
             if (!strcmp(propertyname,"hint")) return "Whether parameter value is a constant or an expression";
             if (!strcmp(propertyname,"getter")) return "isExpression";
+            if (!strcmp(propertyname,"group")) return "flags";
             return NULL;
         case 6:
             if (!strcmp(propertyname,"getter")) return "isShared";
-            if (!strcmp(propertyname,"hint")) return "Whether storage could be optimized by several modules sharing the same parameter value object";
             if (!strcmp(propertyname,"group")) return "flags";
+            if (!strcmp(propertyname,"hint")) return "Whether storage could be optimized by several modules sharing the same parameter value object";
             return NULL;
         default: return NULL;
     }
@@ -9192,18 +9192,18 @@ const char *cMsgParDescriptor::getFieldProperty(void *object, int field, const c
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"editable")) return "";
-            if (!strcmp(propertyname,"hint")) return "Parameter value";
-            if (!strcmp(propertyname,"setter")) return "parse";
             if (!strcmp(propertyname,"getter")) return "str";
+            if (!strcmp(propertyname,"hint")) return "Parameter value";
+            if (!strcmp(propertyname,"editable")) return "";
+            if (!strcmp(propertyname,"setter")) return "parse";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"enum")) return "cPar_Type";
             if (!strcmp(propertyname,"hint")) return "Parameter type";
+            if (!strcmp(propertyname,"enum")) return "cPar_Type";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"group")) return "flags";
             if (!strcmp(propertyname,"getter")) return "isNumeric";
+            if (!strcmp(propertyname,"group")) return "flags";
             if (!strcmp(propertyname,"hint")) return "Whether parameter is of numeric type";
             return NULL;
         case 3:
@@ -9599,9 +9599,9 @@ const char *cMessageHeapDescriptor::getFieldProperty(void *object, int field, co
             if (!strcmp(propertyname,"hint")) return "Number of items contained";
             return NULL;
         case 1:
-            if (!strcmp(propertyname,"getter")) return "peek";
-            if (!strcmp(propertyname,"sizeGetter")) return "getLength";
             if (!strcmp(propertyname,"hint")) return "Self-messages currently scheduled and messages currently in transit";
+            if (!strcmp(propertyname,"sizeGetter")) return "getLength";
+            if (!strcmp(propertyname,"getter")) return "peek";
             return NULL;
         default: return NULL;
     }
@@ -9801,8 +9801,8 @@ const char *cQueueDescriptor::getFieldProperty(void *object, int field, const ch
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"editable")) return "";
+            if (!strcmp(propertyname,"group")) return "fields";
             if (!strcmp(propertyname,"hint")) return "Whether the queue should own the objects inserted into it";
             return NULL;
         case 1:
@@ -9810,8 +9810,8 @@ const char *cQueueDescriptor::getFieldProperty(void *object, int field, const ch
             return NULL;
         case 2:
             if (!strcmp(propertyname,"hint")) return "Queue contents";
-            if (!strcmp(propertyname,"getter")) return "get";
             if (!strcmp(propertyname,"sizeGetter")) return "getLength";
+            if (!strcmp(propertyname,"getter")) return "get";
             return NULL;
         default: return NULL;
     }
@@ -10201,8 +10201,8 @@ const char *cHasherDescriptor::getFieldProperty(void *object, int field, const c
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"getter")) return "str";
             if (!strcmp(propertyname,"hint")) return "The current hash value";
+            if (!strcmp(propertyname,"getter")) return "str";
             return NULL;
         default: return NULL;
     }
@@ -10420,22 +10420,22 @@ const char *cSimulationDescriptor::getFieldProperty(void *object, int field, con
             if (!strcmp(propertyname,"hint")) return "The current event number -- counts from 0 up";
             return NULL;
         case 2:
-            if (!strcmp(propertyname,"label")) return "futureEvents";
             if (!strcmp(propertyname,"hint")) return "Self-messages scheduled, and messages in transit";
+            if (!strcmp(propertyname,"label")) return "futureEvents";
             return NULL;
         case 3:
             if (!strcmp(propertyname,"group")) return "modules";
             if (!strcmp(propertyname,"hint")) return "The largest module ID issued so far";
             return NULL;
         case 4:
-            if (!strcmp(propertyname,"group")) return "modules";
             if (!strcmp(propertyname,"hint")) return "The top-level module";
+            if (!strcmp(propertyname,"group")) return "modules";
             return NULL;
         case 5:
+            if (!strcmp(propertyname,"group")) return "modules";
             if (!strcmp(propertyname,"sizeGetter")) return "getLastModuleId";
             if (!strcmp(propertyname,"hint")) return "List of modules, indexed with module ID";
             if (!strcmp(propertyname,"label")) return "modules";
-            if (!strcmp(propertyname,"group")) return "modules";
             return NULL;
         case 6:
             if (!strcmp(propertyname,"hint")) return "Used for fingerprint calculation";
@@ -11190,9 +11190,9 @@ const char *cTopology_NodeDescriptor::getFieldProperty(void *object, int field, 
             if (!strcmp(propertyname,"hint")) return "Node state -- affects graph algorithms such as shortest path";
             return NULL;
         case 4:
+            if (!strcmp(propertyname,"hint")) return "Incoming links of this graph node";
             if (!strcmp(propertyname,"sizeGetter")) return "getNumInLinks";
             if (!strcmp(propertyname,"getter")) return "getLinkIn";
-            if (!strcmp(propertyname,"hint")) return "Incoming links of this graph node";
             return NULL;
         case 5:
             if (!strcmp(propertyname,"getter")) return "getLinkOut";
@@ -11204,9 +11204,9 @@ const char *cTopology_NodeDescriptor::getFieldProperty(void *object, int field, 
             if (!strcmp(propertyname,"group")) return "shortest path";
             return NULL;
         case 7:
-            if (!strcmp(propertyname,"group")) return "shortest path";
             if (!strcmp(propertyname,"sizeGetter")) return "getNumPaths";
             if (!strcmp(propertyname,"hint")) return "The next link of the shortest path or paths towards the target node";
+            if (!strcmp(propertyname,"group")) return "shortest path";
             return NULL;
         default: return NULL;
     }
@@ -12031,8 +12031,8 @@ const char *cTopologyDescriptor::getFieldProperty(void *object, int field, const
     }
     switch (field) {
         case 0:
-            if (!strcmp(propertyname,"hint")) return "Number of nodes in this topology object";
             if (!strcmp(propertyname,"group")) return "fields";
+            if (!strcmp(propertyname,"hint")) return "Number of nodes in this topology object";
             return NULL;
         case 1:
             if (!strcmp(propertyname,"hint")) return "List of nodes in this topology object";
@@ -12264,8 +12264,8 @@ const char *cXMLElementDescriptor::getFieldProperty(void *object, int field, con
             if (!strcmp(propertyname,"hint")) return "Whether this XML element has child elements";
             return NULL;
         case 5:
-            if (!strcmp(propertyname,"getter")) return "detailedInfo";
             if (!strcmp(propertyname,"label")) return "contents";
+            if (!strcmp(propertyname,"getter")) return "detailedInfo";
             return NULL;
         default: return NULL;
     }

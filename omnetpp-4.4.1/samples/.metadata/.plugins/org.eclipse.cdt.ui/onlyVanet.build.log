@@ -1,5 +1,5 @@
-19:40:34 **** Incremental Build of configuration gcc-debug for project onlyVanet ****
+02:59:32 **** Incremental Build of configuration gcc-debug for project onlyVanet ****
 make MODE=debug CONFIGNAME=gcc-debug all 
 
-19:40:34 Build Finished (took 66ms)
+02:59:33 Build Finished (took 61ms)
 

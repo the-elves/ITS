@@ -133,13 +133,13 @@ depend:
 $O/Cloud.o: Cloud.cc \
   ./NetPkt_m.h
 $O/ExtHttpClient.o: ExtHttpClient.cc \
-  ./SocketRTScheduler.h \
+  ./HttpMsg_m.h \
   ./NetPkt_m.h \
-  ./HttpMsg_m.h
+  ./SocketRTScheduler.h
 $O/ExtTelnetClient.o: ExtTelnetClient.cc \
+  ./TelnetPkt_m.h \
   ./NetPkt_m.h \
-  ./SocketRTScheduler.h \
-  ./TelnetPkt_m.h
+  ./SocketRTScheduler.h
 $O/HttpClient.o: HttpClient.cc \
   ./HttpMsg_m.h \
   ./NetPkt_m.h
@@ -147,10 +147,10 @@ $O/HttpMsg_m.o: HttpMsg_m.cc \
   ./NetPkt_m.h \
   ./HttpMsg_m.h
 $O/HttpServer.o: HttpServer.cc \
-  ./QueueBase.h \
   ./HttpMsg_m.h \
-  ./NetPkt_m.h \
-  ./HttpServer.h
+  ./QueueBase.h \
+  ./HttpServer.h \
+  ./NetPkt_m.h
 $O/NetPkt_m.o: NetPkt_m.cc \
   ./NetPkt_m.h
 $O/QueueBase.o: QueueBase.cc \
@@ -164,7 +164,7 @@ $O/TelnetPkt_m.o: TelnetPkt_m.cc \
   ./TelnetPkt_m.h \
   ./NetPkt_m.h
 $O/TelnetServer.o: TelnetServer.cc \
+  ./NetPkt_m.h \
   ./TelnetServer.h \
-  ./QueueBase.h \
   ./TelnetPkt_m.h \
-  ./NetPkt_m.h
+  ./QueueBase.h
