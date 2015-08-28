@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="329" key="DIALOG_WIDTH"/>
-		<item value="210" key="DIALOG_Y_ORIGIN"/>
-		<item value="640" key="DIALOG_HEIGHT"/>
-		<item value="1509" key="DIALOG_X_ORIGIN"/>
+		<item value="289" key="DIALOG_WIDTH"/>
+		<item value="293" key="DIALOG_Y_ORIGIN"/>
+		<item value="1558" key="DIALOG_X_ORIGIN"/>
+		<item value="432" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="auto" key="selection"/>
+		<item value="Comput" key="selection"/>
 		<list key="findhistory">
-			<item value="auto"/>
-			<item value="best e"/>
-			<item value="datagramlo"/>
-			<item value="par(routingPro"/>
-			<item value="routing"/>
-			<item value="destIE"/>
-			<item value="destIE\"/>
-			<item value="assert(destIE"/>
+			<item value="comput"/>
+			<item value="compute"/>
+			<item value="setM"/>
+			<item value="setMe"/>
+			<item value="findbe"/>
+			<item value="createRREP"/>
+			<item value="updateRoutingTable"/>
+			<item value="setmetr"/>
 		</list>
 		<list key="replacehistory">
-			<item value="/"/>
-			<item value="../../.."/>
-			<item value="/home/administrator/ITS/VANETProject/VANETSim/simulations/aodv"/>
-			<item value="\"/>
-			<item value="../.."/>
 		</list>
 	</section>
 </section>

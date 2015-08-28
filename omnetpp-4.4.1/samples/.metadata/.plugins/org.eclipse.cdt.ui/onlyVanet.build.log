@@ -1,5 +1,24 @@
-02:59:32 **** Incremental Build of configuration gcc-debug for project onlyVanet ****
+23:09:36 **** Incremental Build of configuration gcc-debug for project onlyVanet ****
 make MODE=debug CONFIGNAME=gcc-debug all 
+src/vanetrouting/applications/traci/aodvTraCI.cc
+src/vanetrouting/applications/traci/aodvTraCI.cc: In member function ‘virtual void aodvTraCI::handleMessage(cMessage*)’:
+src/vanetrouting/applications/traci/aodvTraCI.cc:72:40: warning: passing NULL to non-pointer argument 2 of ‘void cComponent::emit(simsignal_t, long int)’ [-Wconversion-null]
+         emit(statPacketRecvdSignal,NULL);
+                                        ^
+src/vanetrouting/applications/traci/aodvTraCI.cc: In member function ‘virtual void aodvTraCI::sendMessage()’:
+src/vanetrouting/applications/traci/aodvTraCI.cc:96:35: warning: passing NULL to non-pointer argument 2 of ‘void cComponent::emit(simsignal_t, long int)’ [-Wconversion-null]
+     emit(statPacketSentSignal,NULL);
+                                   ^
+src/vanetrouting/applications/traci/aodvTraCI.cc:97:35: warning: passing NULL to non-pointer argument 2 of ‘void cComponent::emit(simsignal_t, long int)’ [-Wconversion-null]
+     emit(statPacketSentSignal,NULL);
+                                   ^
+src/vanetrouting/applications/traci/aodvTraCI.cc:115:22: warning: unused variable ‘next2’ [-Wunused-variable]
+         IPv4Address *next2 = new IPv4Address(snext2.c_str());
+                      ^
+src/vanetrouting/applications/traci/aodvTraCI.cc:95:14: warning: unused variable ‘newMessage1’ [-Wunused-variable]
+     cPacket* newMessage1 = new cPacket();
+              ^
+Creating executable: out/gcc-debug//onlyVanet
 
-02:59:33 Build Finished (took 61ms)
+23:09:37 Build Finished (took 1s.211ms)
 

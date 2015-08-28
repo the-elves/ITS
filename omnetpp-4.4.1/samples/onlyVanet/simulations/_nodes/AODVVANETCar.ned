@@ -7,7 +7,7 @@ import inet.networklayer.autorouting.ipv4.HostAutoConfigurator;
 import inet.networklayer.autorouting.ipv4.IPv4NetworkConfigurator;
 import inet.networklayer.common.InterfaceTable;
 import inet.networklayer.ipv4.RoutingTable;
-import inet.networklayer.routing.aodv.AODVRouting;
+import vanetsim.routing.aodvvanet.AODVRouting;
 import inet.nodes.aodv.AODVRouter;
 import inet.nodes.inet.NetworkLayer;
 import inet.transport.udp.UDP;
@@ -20,6 +20,8 @@ import vanetsim.vanetrouting.mobility.contract.IVANETMobility;
 module AODVVANETCar
 {
     parameters:
+        @statistic[statPacketSent](record= count);
+        @statistic[statPacketReceived](record= count);
         @node();
         string mobilityType = default("aodvTraCIMobility");
         networkLayer.configurator.networkConfiguratorModule = "";
@@ -31,7 +33,7 @@ module AODVVANETCar
     submodules:
         notificationBoard: NotificationBoard {
             parameters:
-                @display("p=140,462");
+                @display("p=171,451");
         }
         ac_wlan: HostAutoConfigurator {
             @display("p=251,390");
@@ -82,7 +84,7 @@ module AODVVANETCar
         }
         lifecycleController: LifecycleController {
             parameters:
-                @display("p=50,200");
+                @display("p=73,201");
         }
         aodvRouting: AODVRouting {
             @display("p=473,327");

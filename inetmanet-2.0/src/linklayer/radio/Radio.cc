@@ -1027,6 +1027,8 @@ double Radio::calcDistFreeSpace()
     //minimum power level to be able to physically receive a signal
     double minReceivePower = sensitivity;
 
+//    double interfDistance = pow(waveLength * waveLength * transmitterPower /
+//                         (16.0 * M_PI * M_PI * minReceivePower), 1.0 / alpha);
     double interfDistance = pow(waveLength * waveLength * transmitterPower /
                          (16.0 * M_PI * M_PI * minReceivePower), 1.0 / alpha);
     return interfDistance;

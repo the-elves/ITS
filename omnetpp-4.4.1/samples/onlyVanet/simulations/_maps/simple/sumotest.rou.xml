@@ -23,8 +23,9 @@
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/routes_file.xsd">
     <vehicle id="1" depart="7.00">
-        <route edges="e14"/>
+        <route edges="e14 e15 e16"/>
     </vehicle>
+    
     <vehicle id="2" depart="11.00">
         <route edges="e5 e20 e21 e10"/>
     </vehicle>

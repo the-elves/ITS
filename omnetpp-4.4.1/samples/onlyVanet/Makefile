@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for onlyVanet
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out -I/home/administrator/ITS/inetmanet-2.0/src -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/common -I/home/administrator/ITS/inetmanet-2.0/src/transport/tcp_common -I/home/administrator/ITS/inetmanet-2.0/src/wpan/networklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/common -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/manetrouting/base -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/autorouting/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/tcp -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv6tunneling -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/ieee802154/mac -I/home/administrator/ITS/inetmanet-2.0/src/world/radio -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/mac -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv6 -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/icmpv6 -I/home/administrator/ITS/inetmanet-2.0/src/world/powercontrol -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211mesh/locator -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/mobility/common -I/home/administrator/ITS/inetmanet-2.0/src/util -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/radio/errormodel -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/ieee802154/contract -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers -I/home/administrator/ITS/inetmanet-2.0/src/battery/models -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/manetrouting/dsr -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/radio/propagation -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv6 -I/home/administrator/ITS/inetmanet-2.0/src/world/obstacles -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/radio -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/arp -I/home/administrator/ITS/inetmanet-2.0/src/transport/sctp -I/home/administrator/ITS/inetmanet-2.0/src/base -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/sctp -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/bmac -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/transport/udp -I/home/administrator/ITS/inetmanet-2.0/src/applications/pingapp -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/radio -I/home/administrator/ITS/inetmanet-2.0/src/transport/contract -I/home/administrator/ITS/inetmanet-2.0/src/mobility/contract -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/routing/aodv -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ethernet -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/udp -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/mgmt -I/home/administrator/ITS/inetmanet-2.0/src/wpan/phyLayer/ieee802154 -I/home/administrator/ITS/inetmanet-2.0/src/status -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/xmipv6 -L/home/administrator/ITS/inetmanet-2.0/out/$$\(CONFIGNAME\)/src -linetmanet -DINET_IMPORT -KINETMANET_2_0_PROJ=/home/administrator/ITS/inetmanet-2.0
+#  opp_makemake -f --deep -O out -I/home/administrator/ITS/inetmanet-2.0/src -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/common -I/home/administrator/ITS/inetmanet-2.0/src/transport/tcp_common -I/home/administrator/ITS/inetmanet-2.0/src/wpan/networklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/common -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/manetrouting/base -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/autorouting/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/tcp -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv6tunneling -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/ieee802154/mac -I/home/administrator/ITS/inetmanet-2.0/src/world/radio -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/mac -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv6 -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/icmpv6 -I/home/administrator/ITS/inetmanet-2.0/src/world/powercontrol -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211mesh/locator -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/mobility/common -I/home/administrator/ITS/inetmanet-2.0/src/util -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/radio/errormodel -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv4 -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/ieee802154/contract -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers -I/home/administrator/ITS/inetmanet-2.0/src/battery/models -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/manetrouting/dsr -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/radio/propagation -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/ipv6 -I/home/administrator/ITS/inetmanet-2.0/src/world/obstacles -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/radio -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/arp -I/home/administrator/ITS/inetmanet-2.0/src/transport/sctp -I/home/administrator/ITS/inetmanet-2.0/src/base -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/sctp -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/contract -I/home/administrator/ITS/inetmanet-2.0/src/wpan/linklayer/bmac -I/home/administrator/ITS/inetmanet-2.0/src/transport/udp -I/home/administrator/ITS/inetmanet-2.0/src/applications/pingapp -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/radio -I/home/administrator/ITS/inetmanet-2.0/src/transport/contract -I/home/administrator/ITS/inetmanet-2.0/src/mobility/contract -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/routing/aodv -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ethernet -I/home/administrator/ITS/inetmanet-2.0/src/util/headerserializers/udp -I/home/administrator/ITS/inetmanet-2.0/src/linklayer/ieee80211/mgmt -I/home/administrator/ITS/inetmanet-2.0/src/wpan/phyLayer/ieee802154 -I/home/administrator/ITS/inetmanet-2.0/src/status -I/home/administrator/ITS/inetmanet-2.0/src/networklayer/xmipv6 -L/home/administrator/ITS/inetmanet-2.0/out/$$\(CONFIGNAME\)/src -linetmanet -DINET_IMPORT -KINETMANET_2_0_PROJ=/home/administrator/ITS/inetmanet-2.0
 #
 
 # Name of target to be created (-o option)
@@ -49,8 +49,8 @@ INCLUDE_PATH = \
     -I$(INETMANET_2_0_PROJ)/src/transport/sctp \
     -I$(INETMANET_2_0_PROJ)/src/base \
     -I$(INETMANET_2_0_PROJ)/src/util/headerserializers/sctp \
-    -I$(INETMANET_2_0_PROJ)/src/wpan/linklayer/bmac \
     -I$(INETMANET_2_0_PROJ)/src/linklayer/contract \
+    -I$(INETMANET_2_0_PROJ)/src/wpan/linklayer/bmac \
     -I$(INETMANET_2_0_PROJ)/src/transport/udp \
     -I$(INETMANET_2_0_PROJ)/src/applications/pingapp \
     -I$(INETMANET_2_0_PROJ)/src/linklayer/radio \
@@ -141,6 +141,8 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 # Object files for local .cc and .msg files
 OBJS = \
     $O/src/routing/aodvvanet/AODVVANETRouting.o \
+    $O/src/routing/aodvvanet/AODVRouteData.o \
+    $O/src/routing/aodvvanet/AODVRouting.o \
     $O/src/routing/aodvvanet/AODVVANETRouteData.o \
     $O/src/vanetrouting/applications/traci/rbvtrTraCIDemo.o \
     $O/src/vanetrouting/applications/traci/aodvTraCITestApp.o \
@@ -226,6 +228,7 @@ OBJS = \
     $O/src/veins/modules/world/annotations/AnnotationManager.o \
     $O/src/veins/modules/world/annotations/AnnotationDummy.o \
     $O/src/routing/aodvvanet/AODVVANETControlPackets_m.o \
+    $O/src/routing/aodvvanet/AODVControlPackets_m.o \
     $O/src/vanetrouting/base/Vanet_ControlInfoBreakLink_m.o \
     $O/src/vanetrouting/base/Vanet_MeshControlInfo_m.o \
     $O/src/vanetrouting/base/Vanet_LocatorNotificationInfo_m.o \
@@ -242,6 +245,7 @@ OBJS = \
 # Message files
 MSGFILES = \
     src/routing/aodvvanet/AODVVANETControlPackets.msg \
+    src/routing/aodvvanet/AODVControlPackets.msg \
     src/vanetrouting/base/Vanet_ControlInfoBreakLink.msg \
     src/vanetrouting/base/Vanet_MeshControlInfo.msg \
     src/vanetrouting/base/Vanet_LocatorNotificationInfo.msg \
@@ -400,6 +404,75 @@ depend:
 	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/_maps/*.cc simulations/_maps/downtownorlando/*.cc simulations/_maps/erlangen/*.cc simulations/_maps/i95highway/*.cc simulations/_maps/sanfrancisco/*.cc simulations/_maps/simple/*.cc simulations/_nodes/*.cc simulations/aodv/*.cc simulations/aodv/results/*.cc simulations/aodvuu/*.cc simulations/aodvuu/results/*.cc simulations/aodvvanet/*.cc simulations/aodvvanet/results/*.cc simulations/results/*.cc simulations/traci_launchd/*.cc simulations/veins/*.cc src/*.cc src/nodes/*.cc src/routing/*.cc src/routing/aodvvanet/*.cc src/vanetrouting/*.cc src/vanetrouting/applications/*.cc src/vanetrouting/applications/traci/*.cc src/vanetrouting/base/*.cc src/vanetrouting/mobility/*.cc src/vanetrouting/mobility/common/*.cc src/vanetrouting/mobility/contract/*.cc src/vanetrouting/mobility/single/*.cc src/vanetrouting/networklayer/*.cc src/vanetrouting/util/*.cc src/vanetrouting/world/*.cc src/vanetrouting/world/traci/*.cc src/veins/*.cc src/veins/base/*.cc src/veins/base/connectionManager/*.cc src/veins/base/messages/*.cc src/veins/base/modules/*.cc src/veins/base/phyLayer/*.cc src/veins/base/utils/*.cc src/veins/modules/*.cc src/veins/modules/analogueModel/*.cc src/veins/modules/application/*.cc src/veins/modules/application/ieee80211p/*.cc src/veins/modules/application/traci/*.cc src/veins/modules/mac/*.cc src/veins/modules/mac/ieee80211p/*.cc src/veins/modules/messages/*.cc src/veins/modules/mobility/*.cc src/veins/modules/mobility/traci/*.cc src/veins/modules/nic/*.cc src/veins/modules/obstacle/*.cc src/veins/modules/phy/*.cc src/veins/modules/utility/*.cc src/veins/modules/world/*.cc src/veins/modules/world/annotations/*.cc src/veins/nodes/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
+$O/src/routing/aodvvanet/AODVControlPackets_m.o: src/routing/aodvvanet/AODVControlPackets_m.cc \
+	$(INETMANET_2_0_PROJ)/src/base/Compat.h \
+	$(INETMANET_2_0_PROJ)/src/base/INETDefs.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4Address.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/routing/aodv/AODVControlPackets_m.h \
+	src/routing/aodvvanet/AODVControlPackets_m.h
+$O/src/routing/aodvvanet/AODVRouteData.o: src/routing/aodvvanet/AODVRouteData.cc \
+	$(INETMANET_2_0_PROJ)/src/base/Compat.h \
+	$(INETMANET_2_0_PROJ)/src/base/INETDefs.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4Address.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/routing/aodv/AODVRouteData.h \
+	src/routing/aodvvanet/AODVRouteData.h
+$O/src/routing/aodvvanet/AODVRouting.o: src/routing/aodvvanet/AODVRouting.cc \
+	$(INETMANET_2_0_PROJ)/src/base/Compat.h \
+	$(INETMANET_2_0_PROJ)/src/base/Coord.h \
+	$(INETMANET_2_0_PROJ)/src/base/ILifecycle.h \
+	$(INETMANET_2_0_PROJ)/src/base/INETDefs.h \
+	$(INETMANET_2_0_PROJ)/src/base/INotifiable.h \
+	$(INETMANET_2_0_PROJ)/src/base/LifecycleOperation.h \
+	$(INETMANET_2_0_PROJ)/src/base/ModuleAccess.h \
+	$(INETMANET_2_0_PROJ)/src/base/NodeOperations.h \
+	$(INETMANET_2_0_PROJ)/src/base/NotificationBoard.h \
+	$(INETMANET_2_0_PROJ)/src/base/NotifierConsts.h \
+	$(INETMANET_2_0_PROJ)/src/linklayer/contract/Ieee802Ctrl_m.h \
+	$(INETMANET_2_0_PROJ)/src/linklayer/contract/MACAddress.h \
+	$(INETMANET_2_0_PROJ)/src/linklayer/ieee80211/mac/Ieee80211Consts.h \
+	$(INETMANET_2_0_PROJ)/src/linklayer/ieee80211/mac/Ieee80211Frame_m.h \
+	$(INETMANET_2_0_PROJ)/src/mobility/contract/IVANETMobility.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/common/IInterfaceTable.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/common/INetfilter.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/common/InterfaceEntry.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/common/InterfaceTableAccess.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/common/InterfaceToken.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPProtocolId_m.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPSocket.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4Address.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4ControlInfo.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4ControlInfo_m.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv6Address.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPvXAddress.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4Datagram.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4Datagram_m.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4Route.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4RouteRule.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IRoutingTable.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/RoutingTableAccess.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/routing/aodv/AODVControlPackets_m.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/routing/aodv/AODVRouteData.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/routing/aodv/AODVRouting.h \
+	$(INETMANET_2_0_PROJ)/src/status/NodeStatus.h \
+	$(INETMANET_2_0_PROJ)/src/transport/contract/UDPControlInfo.h \
+	$(INETMANET_2_0_PROJ)/src/transport/contract/UDPControlInfo_m.h \
+	$(INETMANET_2_0_PROJ)/src/transport/contract/UDPSocket.h \
+	$(INETMANET_2_0_PROJ)/src/transport/udp/UDPPacket.h \
+	$(INETMANET_2_0_PROJ)/src/transport/udp/UDPPacket_m.h \
+	$(INETMANET_2_0_PROJ)/src/util/FWMath.h \
+	src/routing/aodvvanet/AODVControlPackets_m.h \
+	src/routing/aodvvanet/AODVRouteData.h \
+	src/routing/aodvvanet/AODVRouting.h \
+	src/vanetrouting/base/VanetModuleAccess.h \
+	src/vanetrouting/mobility/common/VANETMobilityBase.h \
+	src/vanetrouting/mobility/contract/IVANETMobility.h \
+	src/vanetrouting/mobility/single/aodvTraCIMobility.h \
+	src/vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+	src/vanetrouting/world/traci/vanetTraCIColor.h \
+	src/veins/base/utils/Coord.h \
+	src/veins/base/utils/FWMath.h \
+	src/veins/base/utils/MiXiMDefs.h \
+	src/veins/base/utils/miximkerneldefs.h
 $O/src/routing/aodvvanet/AODVVANETControlPackets_m.o: src/routing/aodvvanet/AODVVANETControlPackets_m.cc \
 	$(INETMANET_2_0_PROJ)/src/base/Compat.h \
 	$(INETMANET_2_0_PROJ)/src/base/Coord.h \
@@ -474,11 +547,18 @@ $O/src/vanetrouting/applications/traci/aodvTraCI.o: src/vanetrouting/application
 	$(INETMANET_2_0_PROJ)/src/base/Coord.h \
 	$(INETMANET_2_0_PROJ)/src/base/ILifecycle.h \
 	$(INETMANET_2_0_PROJ)/src/base/INETDefs.h \
+	$(INETMANET_2_0_PROJ)/src/base/INotifiable.h \
 	$(INETMANET_2_0_PROJ)/src/base/LifecycleOperation.h \
+	$(INETMANET_2_0_PROJ)/src/base/ModuleAccess.h \
 	$(INETMANET_2_0_PROJ)/src/mobility/contract/IVANETMobility.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPProtocolId_m.h \
 	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv4Address.h \
 	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPv6Address.h \
 	$(INETMANET_2_0_PROJ)/src/networklayer/contract/IPvXAddress.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4Route.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IPv4RouteRule.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/IRoutingTable.h \
+	$(INETMANET_2_0_PROJ)/src/networklayer/ipv4/RoutingTable.h \
 	$(INETMANET_2_0_PROJ)/src/status/NodeStatus.h \
 	$(INETMANET_2_0_PROJ)/src/transport/contract/UDPSocket.h \
 	$(INETMANET_2_0_PROJ)/src/util/FWMath.h \
@@ -499,6 +579,7 @@ $O/src/vanetrouting/applications/traci/aodvTraCITestApp.o: src/vanetrouting/appl
 	$(INETMANET_2_0_PROJ)/src/base/ILifecycle.h \
 	$(INETMANET_2_0_PROJ)/src/base/INETDefs.h \
 	$(INETMANET_2_0_PROJ)/src/base/LifecycleOperation.h \
+	$(INETMANET_2_0_PROJ)/src/base/ModuleAccess.h \
 	$(INETMANET_2_0_PROJ)/src/mobility/contract/IVANETMobility.h \
 	$(INETMANET_2_0_PROJ)/src/status/NodeStatus.h \
 	$(INETMANET_2_0_PROJ)/src/util/FWMath.h \

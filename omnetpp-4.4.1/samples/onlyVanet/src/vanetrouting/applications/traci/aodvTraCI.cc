@@ -23,11 +23,16 @@
 #include "VanetModuleAccess.h"
 #include "NodeStatus.h"
 #include "UDPSocket.h"
+#include "ModuleAccess.h"
+#include <string>
+#include <stdlib.h>
 
 Define_Module(aodvTraCI);
 
 simsignal_t aodvTraCI::mobilityStateChangedSignal = registerSignal("mobilityStateChanged");
-
+simsignal_t aodvTraCI::statPacketSentSignal = registerSignal("statPacketSent");
+simsignal_t aodvTraCI::statPacketRecvdSignal = registerSignal("statPacketReceived");
+int i;
 void aodvTraCI::initialize(int stage)
 {
     cSimpleModule::initialize(stage);
@@ -43,8 +48,8 @@ void aodvTraCI::initialize(int stage)
         isOperational = (!nodeStatus) || nodeStatus->getState() == NodeStatus::UP;
         if (!isOperational)
             throw cRuntimeError("This module doesn't support starting in node DOWN state");
-
-        traci = aodvTraCIMobilityAccess().get();
+        cModule* host = getContainingNode(this);
+        traci = check_and_cast<aodvTraCIMobility *>(host->getModuleByPath(".mobility"));
         traci->subscribe(mobilityStateChangedSignal, this);
 
         setupLowerLayer();
@@ -64,6 +69,7 @@ void aodvTraCI::handleMessage(cMessage* msg) {
         handleSelfMsg(msg);
     } else {
         handleLowerMsg(msg);
+        emit(statPacketRecvdSignal,NULL);
     }
 }
 
@@ -86,8 +92,31 @@ void aodvTraCI::sendMessage() {
     sentMessage = true;
 
     cPacket* newMessage = new cPacket();
+    cPacket* newMessage1 = new cPacket();
+    emit(statPacketSentSignal,NULL);
+    int i = getParentModule()->getIndex();
+    i = i%9;
+    if(i>1){
+        std::string snext,snext2;
+        snext = "10.0.0.";
+        snext2 = "10.0.0.";
+        char loctate[4];
+        sprintf(loctate,"%d",(4+23*(i-1)));
+        std::string indexip(loctate);
+        snext = snext + indexip;
+        indexip = "";
+        sprintf(loctate,"%d",(4+23*(i-2)));
+        indexip = loctate;
+        snext2 = snext2 + indexip;
 
-    socket.sendTo(newMessage, *(new IPv4Address("10.0.0.136")), 12345);
+        snext = "10.0.0.4";
+        IPv4Address *next = new IPv4Address(snext.c_str());
+        IPv4Address *next2 = new IPv4Address(snext2.c_str());
+        std::string disp = "t=sending to";
+        disp = disp + snext;
+        getParentModule()->bubble(disp.c_str());
+        socket.sendTo(newMessage, *(next), 12345);
+    }
 }
 
 void aodvTraCI::handlePositionUpdate() {

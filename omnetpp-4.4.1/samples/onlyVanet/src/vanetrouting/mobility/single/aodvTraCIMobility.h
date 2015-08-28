@@ -205,11 +205,6 @@ class aodvTraCIMobility : public VANETMobilityBase
         virtual void fixIfHostGetsOutside(); /**< called after each read to check for (and handle) invalid positions */
 };
 
-class aodvTraCIMobilityAccess : public VanetModuleAccess<aodvTraCIMobility>
-{
-    public:
-        aodvTraCIMobilityAccess() : VanetModuleAccess<aodvTraCIMobility>("mobility") {};
-};
 
 
 #endif

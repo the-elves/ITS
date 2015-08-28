@@ -22,6 +22,7 @@
 #include "VanetModuleAccess.h"
 #include "NodeStatus.h"
 #include <cmath>
+#include "ModuleAccess.h"
 
 Define_Module(aodvTraCITestApp);
 
@@ -35,7 +36,8 @@ void aodvTraCITestApp::initialize(int stage)
     {
         testNumber = par("testNumber");
 
-        traci = aodvTraCIMobilityAccess().get();
+        cModule* host = getContainingNode(this);
+        traci = check_and_cast<aodvTraCIMobility *>(host->getModuleByPath(".mobility"));
         traci->subscribe(mobilityStateChangedSignal, this);
 
         visitedEdges.clear();

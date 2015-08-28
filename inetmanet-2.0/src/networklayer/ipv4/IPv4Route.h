@@ -81,7 +81,7 @@ class INET_API IPv4Route : public cObject
     InterfaceEntry *interfacePtr; ///< interface
     SourceType sourceType;   ///< manual, routing prot, etc.
     unsigned int adminDist; ///< Cisco like administrative distance
-    int metric;           ///< Metric ("cost" to reach the destination)
+    double metric;           ///< Metric ("cost" to reach the destination)
     cObject *source;   ///< Object identifying the source
     cObject *protocolData; ///< Routing Protocol specific data
 
@@ -122,7 +122,7 @@ class INET_API IPv4Route : public cObject
     virtual void setInterface(InterfaceEntry *_interfacePtr)  { if (interfacePtr != _interfacePtr) {interfacePtr = _interfacePtr; changed(F_IFACE);} }
     virtual void setSourceType(SourceType _source)  { if (sourceType != _source) {sourceType = _source; changed(F_SOURCE);} }
     virtual void setAdminDist(unsigned int _adminDist)  { if (adminDist != _adminDist) { adminDist = _adminDist; changed(F_ADMINDIST);} }
-    virtual void setMetric(int _metric)  { if (metric != _metric) {metric = _metric; changed(F_METRIC);} }
+    virtual void setMetric(double _metric)  { if (metric != _metric) {metric = _metric; changed(F_METRIC);} }
 
     /** Destination address prefix to match */
     IPv4Address getDestination() const {return dest;}

@@ -26,7 +26,7 @@
 #include "ILifecycle.h"
 #include "LifecycleOperation.h"
 #include "mobility/single/aodvTraCIMobility.h"
-
+#include <networklayer/ipv4/RoutingTable.h>
 /**
  * Small IVC Demo
  */
@@ -48,6 +48,8 @@ class aodvTraCI : public cSimpleModule, protected cListener, public ILifecycle
         bool sentMessage;
         UDPSocket socket;
         static simsignal_t mobilityStateChangedSignal;
+        static simsignal_t statPacketSentSignal;
+        static simsignal_t statPacketRecvdSignal;
 
     protected:
         void setupLowerLayer();

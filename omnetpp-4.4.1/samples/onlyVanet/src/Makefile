@@ -94,6 +94,8 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
 OBJS = \
+    $O/routing/aodvvanet/AODVRouteData.o \
+    $O/routing/aodvvanet/AODVRouting.o \
     $O/routing/aodvvanet/AODVVANETRouteData.o \
     $O/routing/aodvvanet/AODVVANETRouting.o \
     $O/vanetrouting/applications/traci/aodvTraCI.o \
@@ -123,6 +125,7 @@ OBJS = \
     $O/vanetrouting/world/traci/rbvtrTraCIScenarioManager.o \
     $O/vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.o \
     $O/vanetrouting/world/traci/vanetTraCIColor.o \
+    $O/routing/aodvvanet/AODVControlPackets_m.o \
     $O/routing/aodvvanet/AODVVANETControlPackets_m.o \
     $O/vanetrouting/base/ControlVanetRouting_m.o \
     $O/vanetrouting/base/Vanet_ControlInfoBreakLink_m.o \
@@ -131,6 +134,7 @@ OBJS = \
 
 # Message files
 MSGFILES = \
+    routing/aodvvanet/AODVControlPackets.msg \
     routing/aodvvanet/AODVVANETControlPackets.msg \
     vanetrouting/base/ControlVanetRouting.msg \
     vanetrouting/base/Vanet_ControlInfoBreakLink.msg \
@@ -236,178 +240,181 @@ depend:
 	$(Q)$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc nodes/*.cc routing/*.cc routing/aodvvanet/*.cc vanetrouting/*.cc vanetrouting/applications/*.cc vanetrouting/applications/traci/*.cc vanetrouting/base/*.cc vanetrouting/mobility/*.cc vanetrouting/mobility/common/*.cc vanetrouting/mobility/contract/*.cc vanetrouting/mobility/single/*.cc vanetrouting/networklayer/*.cc vanetrouting/util/*.cc vanetrouting/world/*.cc vanetrouting/world/traci/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
-$O/routing/aodvvanet/AODVVANETControlPackets_m.o: routing/aodvvanet/AODVVANETControlPackets_m.cc \
-  vanetrouting/mobility/contract/IVANETMobility.h \
+$O/routing/aodvvanet/AODVRouteData.o: routing/aodvvanet/AODVRouteData.cc \
+  routing/aodvvanet/AODVRouteData.h
+$O/routing/aodvvanet/AODVRouting.o: routing/aodvvanet/AODVRouting.cc \
+  routing/aodvvanet/AODVRouting.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
   vanetrouting/base/VanetModuleAccess.h \
-  routing/aodvvanet/AODVVANETControlPackets_m.h
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  routing/aodvvanet/AODVRouteData.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h \
+  routing/aodvvanet/AODVControlPackets_m.h \
+  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+  vanetrouting/mobility/single/aodvTraCIMobility.h
 $O/routing/aodvvanet/AODVVANETRouteData.o: routing/aodvvanet/AODVVANETRouteData.cc \
   routing/aodvvanet/AODVVANETRouteData.h
 $O/routing/aodvvanet/AODVVANETRouting.o: routing/aodvvanet/AODVVANETRouting.cc \
-  routing/aodvvanet/AODVVANETControlPackets_m.h \
-  routing/aodvvanet/AODVVANETRouting.h \
   routing/aodvvanet/AODVVANETRouteData.h \
+  routing/aodvvanet/AODVVANETRouting.h \
+  routing/aodvvanet/AODVVANETControlPackets_m.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
   vanetrouting/base/VanetModuleAccess.h
 $O/vanetrouting/applications/traci/aodvTraCI.o: vanetrouting/applications/traci/aodvTraCI.cc \
+  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+  vanetrouting/mobility/single/aodvTraCIMobility.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
   vanetrouting/applications/traci/aodvTraCI.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/mobility/single/aodvTraCIMobility.h \
-  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
   vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/world/traci/vanetTraCIColor.h
+  vanetrouting/mobility/contract/IVANETMobility.h
 $O/vanetrouting/applications/traci/aodvTraCITestApp.o: vanetrouting/applications/traci/aodvTraCITestApp.cc \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/applications/traci/aodvTraCITestApp.h \
-  vanetrouting/mobility/single/aodvTraCIMobility.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/aodvTraCIScenarioManager.h \
-  vanetrouting/world/traci/vanetTraCIColor.h
+  vanetrouting/mobility/single/aodvTraCIMobility.h \
+  vanetrouting/applications/traci/aodvTraCITestApp.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h
 $O/vanetrouting/applications/traci/bitcarTraCIDemo.o: vanetrouting/applications/traci/bitcarTraCIDemo.cc \
   vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/applications/traci/bitcarTraCIDemo.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/mobility/single/bitcarTraCIMobility.h \
-  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManager.h \
+  vanetrouting/base/VanetModuleAccess.h \
+  vanetrouting/mobility/single/bitcarTraCIMobility.h \
   vanetrouting/world/traci/vanetTraCIColor.h
 $O/vanetrouting/applications/traci/bitcarTraCITestApp.o: vanetrouting/applications/traci/bitcarTraCITestApp.cc \
-  vanetrouting/applications/traci/bitcarTraCITestApp.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/mobility/single/bitcarTraCIMobility.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManager.h \
   vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/single/bitcarTraCIMobility.h
-$O/vanetrouting/applications/traci/rbvtrTraCIDemo.o: vanetrouting/applications/traci/rbvtrTraCIDemo.cc \
-  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/applications/traci/rbvtrTraCIDemo.h \
+  vanetrouting/applications/traci/bitcarTraCITestApp.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h
+$O/vanetrouting/applications/traci/rbvtrTraCIDemo.o: vanetrouting/applications/traci/rbvtrTraCIDemo.cc \
   vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
-  vanetrouting/world/traci/rbvtrTraCIScenarioManager.h
-$O/vanetrouting/applications/traci/rbvtrTraCITestApp.o: vanetrouting/applications/traci/rbvtrTraCITestApp.cc \
-  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
+  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/applications/traci/rbvtrTraCIDemo.h
+$O/vanetrouting/applications/traci/rbvtrTraCITestApp.o: vanetrouting/applications/traci/rbvtrTraCITestApp.cc \
   vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/applications/traci/rbvtrTraCITestApp.h \
+  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
   vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/base/VanetModuleAccess.h
-$O/vanetrouting/base/ControlVanetRouting_m.o: vanetrouting/base/ControlVanetRouting_m.cc \
-  vanetrouting/base/VanetAddress.h \
-  vanetrouting/base/ControlVanetRouting_m.h
+  vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
+  vanetrouting/base/VanetModuleAccess.h \
+  vanetrouting/mobility/contract/IVANETMobility.h
 $O/vanetrouting/base/VanetAddress.o: vanetrouting/base/VanetAddress.cc \
   vanetrouting/base/VanetAddress.h
 $O/vanetrouting/base/VanetModuleAccess.o: vanetrouting/base/VanetModuleAccess.cc \
   vanetrouting/base/VanetModuleAccess.h
 $O/vanetrouting/base/VanetNetfilterHook.o: vanetrouting/base/VanetNetfilterHook.cc \
-  vanetrouting/base/VanetNetfilterHook.h \
+  vanetrouting/base/VanetAddress.h \
   vanetrouting/base/ControlVanetRouting_m.h \
-  vanetrouting/base/VanetAddress.h
+  vanetrouting/base/VanetNetfilterHook.h
 $O/vanetrouting/base/VanetRoutingBase.o: vanetrouting/base/VanetRoutingBase.cc \
-  vanetrouting/base/Vanet_ControlInfoBreakLink_m.h \
-  vanetrouting/base/compatibility_vanet.h \
   vanetrouting/base/VanetRoutingBase.h \
+  vanetrouting/base/Vanet_ControlInfoBreakLink_m.h \
   vanetrouting/base/VanetAddress.h \
   vanetrouting/base/VanetNetfilterHook.h \
-  vanetrouting/util/GlobalWirelessLinkInspector_Vanet.h
-$O/vanetrouting/base/Vanet_ControlInfoBreakLink_m.o: vanetrouting/base/Vanet_ControlInfoBreakLink_m.cc \
-  vanetrouting/base/Vanet_ControlInfoBreakLink_m.h
+  vanetrouting/util/GlobalWirelessLinkInspector_Vanet.h \
+  vanetrouting/base/compatibility_vanet.h
 $O/vanetrouting/mobility/common/LineSegmentsVANETMobilityBase.o: vanetrouting/mobility/common/LineSegmentsVANETMobilityBase.cc \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/mobility/common/LineSegmentsVANETMobilityBase.h \
   vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/mobility/common/LineSegmentsVANETMobilityBase.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/mobility/common/MovingVANETMobilityBase.h
 $O/vanetrouting/mobility/common/MovingVANETMobilityBase.o: vanetrouting/mobility/common/MovingVANETMobilityBase.cc \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h \
+  vanetrouting/mobility/common/MovingVANETMobilityBase.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h
+$O/vanetrouting/mobility/common/VANETMobilityAccess.o: vanetrouting/mobility/common/VANETMobilityAccess.cc \
+  vanetrouting/mobility/common/VANETMobilityAccess.h \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h
+$O/vanetrouting/mobility/common/VANETMobilityBase.o: vanetrouting/mobility/common/VANETMobilityBase.cc \
   vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/common/MovingVANETMobilityBase.h
-$O/vanetrouting/mobility/common/VANETMobilityAccess.o: vanetrouting/mobility/common/VANETMobilityAccess.cc \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/mobility/common/VANETMobilityAccess.h
-$O/vanetrouting/mobility/common/VANETMobilityBase.o: vanetrouting/mobility/common/VANETMobilityBase.cc \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h
+  vanetrouting/base/VanetModuleAccess.h
 $O/vanetrouting/mobility/contract/IVANETMobility.o: vanetrouting/mobility/contract/IVANETMobility.cc \
   vanetrouting/mobility/contract/IVANETMobility.h
 $O/vanetrouting/mobility/single/LinearVANETMobility.o: vanetrouting/mobility/single/LinearVANETMobility.cc \
   vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/mobility/common/MovingVANETMobilityBase.h \
   vanetrouting/mobility/common/VANETMobilityBase.h \
+  vanetrouting/mobility/common/MovingVANETMobilityBase.h \
   vanetrouting/mobility/single/LinearVANETMobility.h
 $O/vanetrouting/mobility/single/aodvTraCIMobility.o: vanetrouting/mobility/single/aodvTraCIMobility.cc \
   vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
   vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/single/aodvTraCIMobility.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h
+  vanetrouting/mobility/common/VANETMobilityBase.h \
+  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+  vanetrouting/mobility/single/aodvTraCIMobility.h
 $O/vanetrouting/mobility/single/bitcarTraCIMobility.o: vanetrouting/mobility/single/bitcarTraCIMobility.cc \
+  vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/mobility/single/bitcarTraCIMobility.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManager.h \
   vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/mobility/single/bitcarTraCIMobility.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h
+  vanetrouting/mobility/contract/IVANETMobility.h
 $O/vanetrouting/mobility/single/rbvtrTraCIMobility.o: vanetrouting/mobility/single/rbvtrTraCIMobility.cc \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
   vanetrouting/mobility/single/rbvtrTraCIMobility.h \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/world/traci/vanetTraCIColor.h
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h
 $O/vanetrouting/util/GlobalWirelessLinkInspector_Vanet.o: vanetrouting/util/GlobalWirelessLinkInspector_Vanet.cc \
   vanetrouting/util/GlobalWirelessLinkInspector_Vanet.h \
   vanetrouting/base/VanetAddress.h
 $O/vanetrouting/world/traci/aodvTraCIScenarioManager.o: vanetrouting/world/traci/aodvTraCIScenarioManager.cc \
-  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
-  vanetrouting/world/traci/aodvTraCIConstants.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/mobility/single/aodvTraCIMobility.h
-$O/vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.o: vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.cc \
-  vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.h \
-  vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/aodvTraCIConstants.h \
-  vanetrouting/world/traci/aodvTraCIScenarioManager.h
+  vanetrouting/base/VanetModuleAccess.h \
+  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+  vanetrouting/mobility/single/aodvTraCIMobility.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h
+$O/vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.o: vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.cc \
+  vanetrouting/world/traci/aodvTraCIScenarioManager.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/world/traci/aodvTraCIConstants.h \
+  vanetrouting/base/VanetModuleAccess.h \
+  vanetrouting/world/traci/aodvTraCIScenarioManagerLaunchd.h
 $O/vanetrouting/world/traci/bitcarTraCIScenarioManager.o: vanetrouting/world/traci/bitcarTraCIScenarioManager.cc \
   vanetrouting/mobility/common/VANETMobilityBase.h \
   vanetrouting/world/traci/bitcarTraCIConstants.h \
-  vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/mobility/contract/IVANETMobility.h \
   vanetrouting/mobility/single/bitcarTraCIMobility.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/mobility/contract/IVANETMobility.h \
+  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManager.h
 $O/vanetrouting/world/traci/bitcarTraCIScenarioManagerLaunchd.o: vanetrouting/world/traci/bitcarTraCIScenarioManagerLaunchd.cc \
   vanetrouting/world/traci/vanetTraCIColor.h \
-  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManager.h \
+  vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/world/traci/bitcarTraCIScenarioManagerLaunchd.h \
   vanetrouting/world/traci/bitcarTraCIConstants.h
 $O/vanetrouting/world/traci/rbvtrTraCIScenarioManager.o: vanetrouting/world/traci/rbvtrTraCIScenarioManager.cc \
-  vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
-  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
-  vanetrouting/mobility/common/VANETMobilityBase.h \
-  vanetrouting/world/traci/vanetTraCIColor.h \
   vanetrouting/base/VanetModuleAccess.h \
   vanetrouting/mobility/contract/IVANETMobility.h \
-  vanetrouting/world/traci/rbvtrTraCIConstants.h
-$O/vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.o: vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.cc \
   vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
-  vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
+  vanetrouting/mobility/single/rbvtrTraCIMobility.h \
   vanetrouting/world/traci/rbvtrTraCIConstants.h \
+  vanetrouting/mobility/common/VANETMobilityBase.h
+$O/vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.o: vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.cc \
+  vanetrouting/world/traci/rbvtrTraCIScenarioManagerLaunchd.h \
+  vanetrouting/world/traci/rbvtrTraCIScenarioManager.h \
+  vanetrouting/world/traci/vanetTraCIColor.h \
   vanetrouting/base/VanetModuleAccess.h \
-  vanetrouting/world/traci/vanetTraCIColor.h
+  vanetrouting/world/traci/rbvtrTraCIConstants.h
 $O/vanetrouting/world/traci/vanetTraCIColor.o: vanetrouting/world/traci/vanetTraCIColor.cc \
   vanetrouting/world/traci/vanetTraCIColor.h

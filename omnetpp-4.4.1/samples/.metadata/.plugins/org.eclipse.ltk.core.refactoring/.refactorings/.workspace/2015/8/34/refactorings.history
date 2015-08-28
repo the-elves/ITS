@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;inetmanet-2.0&apos;" deleteContents="true" description="Delete resource &apos;inetmanet-2.0&apos;" element1="/inetmanet-2.0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1439930989151"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;inetmanet-2.0&apos;" deleteContents="true" description="Delete resource &apos;inetmanet-2.0&apos;" element1="/inetmanet-2.0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1439930989151"/>&#x0A;<refactoring comment="Delete resource &apos;onlyVanet&apos;" deleteContents="false" description="Delete resource &apos;onlyVanet&apos;" element1="/onlyVanet" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1440266220248"/>
 </session>
